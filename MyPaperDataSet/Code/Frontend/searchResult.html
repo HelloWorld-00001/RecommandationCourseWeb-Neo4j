@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% block title %} Search Result {% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row" style="margin-top: 140px;">
+    <div class="col-8">
+      <div class="row">
+        <div class="card rounded shadow border-0">
+          <div class="card-body bg-white rounded">
+            <div class="table-responsive">
+              <table id="tableOfData" style="width:100%; border-radius: 10px;" class="table table-striped table-bordered">
+                <thead>
+                  <tr class="bgOrange">
+                    {% for col in tableData.columns %}
+                    <th>{{col}}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for index, row in tableData.iterrows() %}
+                  {% if index%2 == 0 %}
+                  <tr class="bg-white">
+                    {% else %}
+                  <tr class="bgCream">
+                    {% endif %}
+                    {% for col in tableData.columns %}
+                    {% if col == "Link" %}
+                    <td><a href="{{row[col]}}"> Go to </a></td>
+                    {% elif col == "Frequency" %}
+                      <td>{{row[col]}} %</td>
+                    {% else %}
+                      <td>{{row[col]}}</td>
+                    {% endif %}
+
+
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 " style="padding-top: 20px">
+      <div class="card" >
+        <div class="card-header bgOrange" style="text-align: center;">
+          <p class="textBoldColor" style="font-size: 20px; height: 30px;">Filter</p>
+        </div>
+        <div class="card-body bgCream">
+          <form action="/filterSearch" method="post" id="filterSearch">
+          {% if entity == "Course" %}
+
+            <div class="form-row">
+              <div class="col-md-4">
+                <input type="text" class="bgOrange form-control textBoldColor" id="plLabel" value="Level"
+                  readonly>
+              </div>
+              <div class="form-group col-md-8 ">
+                  <select id="levelDropdown" name="levelDropdown" class="dropdownCustom">
+                    <option value="Basic">Basic</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="None">None</option>
+                  </select>
+
+              </div>
+
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="bgYellow form-control textBoldColor" id="fwLabel" value="Price" readonly>
+              </div>
+              <div class="form-group col-md-8">
+                <div class="dropdown">
+                  <select id="priceDropdown" name="priceDropdown" class="dropdownCustom">
+                    <option value="Free">Free</option>
+                    <option value="Fee">Fee</option>
+                  </select>
+                </div>             
+              </div>
+
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="bgOrange form-control textBoldColor" id="plLabel" value="Duration" readonly>
+              </div>
+              <div class="form-group col-md-8">
+                <select id="durationDropdown" name="durationDropdown" class="dropdownCustom">
+                  <option value="1">1 hour</option>
+
+                  {% for i in range(2, 11) %}
+                  <option value="{{i}}">{{i}} hours</option>
+                  {% endfor %}
+                  <option value="unLimit">Unlimit</option>
+                </select>
+              </div>         
+            </div>
+
+            {% else %}
+              <div class="form-row">
+                <div class="col-md-4">
+                  <input type="text" class="bgOrange form-control textBoldColor" id="sortByFrequency" value="Frequency"
+                    readonly>
+                </div>
+                <div class="form-group col-md-8 ">
+                  <select id="frequencyDropdown" name="frequencyDropdown" class="dropdownCustom">  
+                    {% for i in range(1, 10) %}
+                    <option value="{{i*10}}">{{i*10}} %</option>
+                    {% endfor %}
+                  </select>
+  
+                </div>
+  
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <input type="text" class="bgYellow form-control textBoldColor" id="sortByOption" value="Sort By" readonly>
+                </div>
+                <div class="form-group col-md-8">
+                  <div class="dropdown">
+                    <select id="sortByDropdown" name="sortByDropdown" class="dropdownCustom">
+                      <option value="Frequency">Frequency</option>
+                      <option value="Total job by skill">Total Job by Skill</option>
+                      <option value="Total job by career">Total Job by Career</option>
+                    </select>
+                  </div>             
+                </div>
+  
+              </div>
+              <div class="form-row" style="height: 30px;">
+                        
+              </div>
+            {% endif %}
+            
+            <div class="form-row">
+              <div class="form-group col-md-5">
+                {% if entity == "Course" %}
+                  <button id="switchButton" type="submit" class="search_submit_button buttonBorder bgYellow textBoldColor" value="Find Job">Find Job</button>
+                {% else %}
+                  <button id="switchButton" type="submit" class="search_submit_button buttonBorder bgYellow textBoldColor"  value="Find Course">Find Course</button>
+                {% endif %}
+
+              </div>
+              <div class="form-group col-md-2">
+                <input type="text"  id="option" name="option" value="" readonly hidden>
+              </div>
+              <div class="form-group col-md-5">
+                <button type="submit" class="search_submit_button buttonBorder bgOrange textBoldColor" value="Apply">Apply</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $('#searchForm').on('submit', function (e) {
+    e.preventDefault();
+    // Check  the input field, the programming language can not be empty
+    const ProgrammingLanguage = $('#inputProgrammingLanguage').val();
+
+    console.log(ProgrammingLanguage);
+    if (!ProgrammingLanguage) {
+      document.getElementById("alertPL").removeAttribute('hidden');
+    }
+    else {
+      document.getElementById("alertPL").innerHTML = "";
+      $('#searchForm').submit();
+    }
+
+  });
+
+
+</script>
+<script>
+
+// ----------------------------------------------------------------
+// This code help applying the filter without reload the page
+// ----------------------------------------------------------------
+
+
+  $(document).ready(function() {
+    $('#filterSearch').on('submit', function(e) {
+
+      const submitButton = $(document.activeElement).val();
+      if (submitButton === "Find Job" ) {
+        document.getElementById("option").value = "Job";
+
+      }
+      else if (submitButton === "Find Course") {
+        document.getElementById("option").value = "Course";
+      }
+      else {
+        e.preventDefault();  // Prevent the default form submission
+        $.ajax({
+          type: 'POST',
+          url: '/filterSearch',
+          data: $(this).serialize(),  // Serialize form data for submission
+          success: function(response) {
+            // Clear the current table rows
+            $("#tableOfData tbody").empty();
+            let columns = response.column
+
+            // Iterate over the response and append rows to the table
+            $.each(response.data, function(index, row) {
+              let newRow = `<tr class="${index % 2 === 0 ? 'bg-white' : 'bgCream'}">`;
+              
+                $.each(columns, function(_, col) {
+                // Check if the column is 'Link' to format the cell as an anchor tag
+                if (col === 'Frequency') {
+                  newRow += `<td>${row[col]} %</td>`;
+                }else if (col === 'Link') {
+                  newRow += `<td><a href="${row[col]}">Go to</a></td>`;
+                }
+                else {
+                  newRow += `<td>${row[col]}</td>`;
+                }
+              });
+
+              newRow += `</tr>`;
+              $("#tableOfData tbody").append(newRow);
+            });
+          },
+          error: function(xhr, status, error) {
+            console.error("Error: " + status + " " + error);
+          }
+        });
+      }
+
+      
+    });
+  });
+
+
+
+</script>
+
+
+{% endblock %}

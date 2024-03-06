@@ -1,0 +1,295 @@
+CourseName,CourseLink,CourseLevel,CourseDuration,CoursePrice,Enroll,Rate,Organization,Website,LinkToWebsite
+Introduction to Data Engineering,https://www.coursera.org/learn/introduction-to-data-engineering,Basic,11.0,0.0,19,4.7,IBM,coursera,www.coursera.org
+Data Engineering and Machine Learning using Spark,https://www.coursera.org/learn/data-engineering-and-machine-learning-using-spark,Basic,7.0,0.0,1,3.7,IBM,coursera,www.coursera.org
+Cloud Data Engineering,https://www.coursera.org/learn/cloud-data-engineering-duke,Intermediate,17.0,0.0,1,4.5,Duke University,coursera,www.coursera.org
+Cloud Data Engineering,https://www.coursera.org/learn/cloud-data-engineering-duke,Intermediate,17.0,0.0,1,4.5,Duke University,coursera,www.coursera.org
+Modernizing Data Lakes and Data Warehouses with GCP,https://www.coursera.org/learn/data-lakes-data-warehouses-gcp,Intermediate,9.0,0.0,33,4.7,Google Cloud,coursera,www.coursera.org
+Explore Core Data Concepts in Microsoft Azure,https://www.coursera.org/learn/explore-core-data-concepts-microsoft-azure,Basic,9.0,0.0,3,4.8,Microsoft,coursera,www.coursera.org
+AI Workflow: Business Priorities and Data Ingestion,https://www.coursera.org/learn/ibm-ai-workflow-business-priorities-data-ingestion,Intermediate,8.0,0.0,4,4.3,IBM,coursera,www.coursera.org
+Introduction to Data Engineering,https://www.coursera.org/learn/introduction-to-data-engineering,Basic,11.0,0.0,19,4.7,IBM,coursera,www.coursera.org
+Introduction to Data Analytics,https://www.coursera.org/learn/introduction-to-data-analytics,Basic,11.0,0.0,120,4.8,IBM,coursera,www.coursera.org
+Introduction to NoSQL Databases,https://www.coursera.org/learn/introduction-to-nosql-databases,Basic,17.0,0.0,3,4.6,IBM,coursera,www.coursera.org
+Python Project for Data Engineering,https://www.coursera.org/learn/python-project-for-data-engineering,Intermediate,6.0,0.0,6,4.6,IBM,coursera,www.coursera.org
+Qualitative Data Analysis with MAXQDA Software,https://www.coursera.org/learn/qualitative-data-analysis-with-maxqda-software,Intermediate,16.0,0.0,2,4.6,Emory University,coursera,www.coursera.org
+Exploratory Data Analysis for Machine Learning,https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning,Intermediate,8.0,0.0,23,4.6,IBM,coursera,www.coursera.org
+AI Workflow: Data Analysis and Hypothesis Testing,https://www.coursera.org/learn/ibm-ai-workflow-data-analysis-hypothesis-testing,Advanced,11.0,0.0,2,4.2,IBM,coursera,www.coursera.org
+Exploratory Data Analysis with MATLAB,https://www.coursera.org/learn/exploratory-data-analysis-matlab,Basic,19.0,0.0,30,4.8,MathWorks,coursera,www.coursera.org
+Exploratory Data Analysis,https://www.coursera.org/learn/exploratory-data-analysis,,55.0,0.0,163,4.7,Johns Hopkins University,coursera,www.coursera.org
+Excel Basics for Data Analysis,https://www.coursera.org/learn/excel-basics-data-analysis-ibm,Basic,12.0,0.0,66,4.8,IBM,coursera,www.coursera.org
+"Data Wrangling, Analysis and AB Testing with SQL",https://www.coursera.org/learn/data-wrangling-analysis-abtesting,Intermediate,16.0,0.0,30,3.5,"University of California, Davis",coursera,www.coursera.org
+Data Analysis with R,https://www.coursera.org/learn/data-analysis-with-r,Intermediate,14.0,0.0,2,4.9,IBM,coursera,www.coursera.org
+Data Analysis and Reporting in SAS Visual Analytics,https://www.coursera.org/learn/data-analysis-reporting-sas-va,,9.0,0.0,10,4.8,SAS,coursera,www.coursera.org
+"Data Analysis and Representation, Selection and Iteration",https://www.coursera.org/learn/data-analysis-representation-selection-iteration,Basic,11.0,0.0,3,4.7,University of Colorado System,coursera,www.coursera.org
+Data Analysis Tools,https://www.coursera.org/learn/data-analysis-tools,,10.0,0.0,42,4.5,Wesleyan University,coursera,www.coursera.org
+Data Analysis and Presentation Skills: the PwC Approach Final Project,https://www.coursera.org/learn/data-analysis-project-pwc,Basic,11.0,0.0,3,4.8,PwC,coursera,www.coursera.org
+Big Data Analysis Deep Dive,https://www.coursera.org/learn/big-data-analysis-deep-dive,Intermediate,14.0,0.0,0,0.0,Alibaba Cloud Academy,coursera,www.coursera.org
+"Big Data Analysis: Hive, Spark SQL, DataFrames and GraphFrames",https://www.coursera.org/learn/big-data-analysis,Advanced,37.0,0.0,29,4.0,Yandex,coursera,www.coursera.org
+Machine Learning,https://www.coursera.org/learn/machine-learning,,61.0,0.0,4491564,4.9,Stanford University,coursera,www.coursera.org
+Spatial Analysis and Satellite Imagery in a GIS,https://www.coursera.org/learn/spatial-analysis-satellite-imagery-in-a-gis,Basic,14.0,0.0,18,4.9,University of Toronto,coursera,www.coursera.org
+Neural Networks and Deep Learning,https://www.coursera.org/learn/neural-networks-deep-learning,Intermediate,27.0,0.0,1013093,4.9,DeepLearning.AI,coursera,www.coursera.org
+What is Data Science?,https://www.coursera.org/learn/what-is-datascience,Basic,9.0,0.0,516,4.7,IBM,coursera,www.coursera.org
+Web of Data,https://www.coursera.org/learn/web-data,Intermediate,18.0,0.0,4,4.1,EIT Digital,coursera,www.coursera.org
+Share Data Through the Art of Visualization,https://www.coursera.org/learn/visualize-data,Basic,24.0,0.0,68,4.5,Google,coursera,www.coursera.org
+Visualization for Data Journalism,https://www.coursera.org/learn/visualization-for-data-journalism,Basic,18.0,0.0,6,4.4,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Using Data for Geographic Mapping and Forecasting in SAS Visual Analytics,https://www.coursera.org/learn/using-data-geographic-mapping-sas-va,Intermediate,5.0,0.0,7,4.8,SAS,coursera,www.coursera.org
+Understanding and Visualizing Data with Python,https://www.coursera.org/learn/understanding-visualization-data,Basic,21.0,0.0,92,4.7,University of Michigan,coursera,www.coursera.org
+Tools for Exploratory Data Analysis in Business,https://www.coursera.org/learn/tools-exploratory-data-analysis-business,Basic,18.0,0.0,2,0.0,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Importing Data in the Tidyverse,https://www.coursera.org/learn/tidyverse-importing-data,Basic,15.0,0.0,0,4.6,Johns Hopkins University,coursera,www.coursera.org
+Visualizing Data in the Tidyverse,https://www.coursera.org/learn/tidyverse-visualize-data,,17.0,0.0,0,0.0,Johns Hopkins University,coursera,www.coursera.org
+Wrangling Data in the Tidyverse,https://www.coursera.org/learn/tidyverse-data-wrangling,,14.0,0.0,0,4.8,Johns Hopkins University,coursera,www.coursera.org
+Modeling Data in the Tidyverse,https://www.coursera.org/learn/tidyverse-modelling-data,,21.0,0.0,0,0.0,Johns Hopkins University,coursera,www.coursera.org
+The Data Science of Health Informatics,https://www.coursera.org/learn/the-data-science-of-health-informatics,Basic,10.0,0.0,12,4.7,Johns Hopkins University,coursera,www.coursera.org
+The Fundamental of Data-Driven Investment,https://www.coursera.org/learn/the-fundamental-of-data-driven-investment,Basic,19.0,0.0,0,0.0,Sungkyunkwan University,coursera,www.coursera.org
+"Teaching Impacts of Technology: Data Collection, Use, and Privacy",https://www.coursera.org/learn/teach-impacts-technology-data,Basic,13.0,0.0,2,4.6,University of California San Diego,coursera,www.coursera.org
+Survey Data Collection and Analytics Project (Capstone),https://www.coursera.org/learn/survey-data-capstone,,14.0,0.0,0,0.0,"University of Michigan,University of Maryland, College Park",coursera,www.coursera.org
+Statistics for Data Science with Python,https://www.coursera.org/learn/statistics-for-data-science-python,,13.0,0.0,9,4.6,IBM,coursera,www.coursera.org
+Statistical Inference for Estimation in Data Science,https://www.coursera.org/learn/statistical-inference-for-estimation-in-data-science,Intermediate,27.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+SQL for Data Science with R,https://www.coursera.org/learn/sql-data-science-r,Basic,16.0,0.0,2,4.0,IBM,coursera,www.coursera.org
+SQL for Data Science,https://www.coursera.org/learn/sql-for-data-science,Basic,14.0,0.0,358,4.6,"University of California, Davis",coursera,www.coursera.org
+SQL for Data Science Capstone Project,https://www.coursera.org/learn/sql-data-science-capstone,Intermediate,35.0,0.0,18,4.1,"University of California, Davis",coursera,www.coursera.org
+Spatial Data Science and Applications,https://www.coursera.org/learn/spatial-data-science,Intermediate,12.0,0.0,18,4.4,Yonsei University,coursera,www.coursera.org
+Big Data Analysis with Scala and Spark,https://www.coursera.org/learn/scala-spark-big-data,,28.0,0.0,90,4.7,�cole Polytechnique F�d�rale de Lausanne,coursera,www.coursera.org
+Security and Privacy for Big Data - Part 2,https://www.coursera.org/learn/security-privacy-big-data-protection,Basic,1.0,0.0,6,4.7,EIT Digital,coursera,www.coursera.org
+Security and Privacy for Big Data - Part 1,https://www.coursera.org/learn/security-privacy-big-data,Basic,1.0,0.0,12,4.6,EIT Digital,coursera,www.coursera.org
+Serverless Data Processing with Dataflow: Operations,https://www.coursera.org/learn/serverless-data-processing-with-dataflow-operations,Advanced,10.0,0.0,0,0.0,Google Cloud,coursera,www.coursera.org
+Serverless Data Processing with Dataflow: Foundations,https://www.coursera.org/learn/serverless-data-processing-with-dataflow-foundations,Intermediate,3.0,0.0,2,4.1,Google Cloud,coursera,www.coursera.org
+Social Media Data Analytics,https://www.coursera.org/learn/social-media-data-analytics,Intermediate,13.0,0.0,35,4.1,University of Washington,coursera,www.coursera.org
+Databases and SQL for Data Science with Python,https://www.coursera.org/learn/sql-data-science,Basic,20.0,0.0,220,4.6,IBM,coursera,www.coursera.org
+Python per la Data Science,https://www.coursera.org/learn/python-per-la-data-science,Intermediate,18.0,0.0,0,0.0,Universit� di Napoli Federico II,coursera,www.coursera.org
+Python Project for Data Science,https://www.coursera.org/learn/python-project-for-data-science,Intermediate,6.0,0.0,41,4.5,IBM,coursera,www.coursera.org
+Python Project for Data Engineering,https://www.coursera.org/learn/python-project-for-data-engineering,Intermediate,6.0,0.0,6,4.6,IBM,coursera,www.coursera.org
+Qualitative Data Collection Methods,https://www.coursera.org/learn/qualitative-data-collection-methods,Basic,14.0,0.0,2,4.9,Emory University,coursera,www.coursera.org
+Qualitative Data Analysis with MAXQDA Software,https://www.coursera.org/learn/qualitative-data-analysis-with-maxqda-software,Intermediate,16.0,0.0,2,4.6,Emory University,coursera,www.coursera.org
+Building Data Visualization Tools,https://www.coursera.org/learn/r-data-visualization,Intermediate,13.0,0.0,11,3.9,Johns Hopkins University,coursera,www.coursera.org
+Data Science in Real Life,https://www.coursera.org/learn/real-life-data-science,,7.0,0.0,47,4.4,Johns Hopkins University,coursera,www.coursera.org
+Relational database systems,https://www.coursera.org/learn/relational-database,Intermediate,15.0,0.0,19,4.4,Universidad Nacional Aut�noma de M�xico,coursera,www.coursera.org
+Relational Database Administration (DBA),https://www.coursera.org/learn/relational-database-administration,Basic,17.0,0.0,0,0.0,IBM,coursera,www.coursera.org
+Population Health: Responsible Data Analysis,https://www.coursera.org/learn/responsible-data-analysis,Basic,21.0,0.0,3,4.6,Universiteit Leiden,coursera,www.coursera.org
+Process Data from Dirty to Clean,https://www.coursera.org/learn/process-data,Basic,22.0,0.0,95,4.8,Google,coursera,www.coursera.org
+Promote the Ethical Use of Data-Driven Technologies,https://www.coursera.org/learn/promote-ethical-data-driven-technologies,Basic,21.0,0.0,5,4.6,CertNexus,coursera,www.coursera.org
+Python Data Structures,https://www.coursera.org/learn/python-data,,19.0,0.0,803,4.9,University of Michigan,coursera,www.coursera.org
+"Capstone: Retrieving, Processing, and Visualizing Data with Python",https://www.coursera.org/learn/python-data-visualization,,9.0,0.0,210,4.7,University of Michigan,coursera,www.coursera.org
+Data Processing Using Python,https://www.coursera.org/learn/python-data-processing,Basic,29.0,0.0,51,4.1,Nanjing University,coursera,www.coursera.org
+Using Databases with Python,https://www.coursera.org/learn/python-databases,,15.0,0.0,396,4.8,University of Michigan,coursera,www.coursera.org
+"Python for Data Science, AI & Development",https://www.coursera.org/learn/python-for-applied-data-science-ai,Basic,20.0,0.0,348,4.6,IBM,coursera,www.coursera.org
+Data Visualization with Python,https://www.coursera.org/learn/python-for-data-visualization,Intermediate,17.0,0.0,137,4.5,IBM,coursera,www.coursera.org
+Using Python to Access Web Data,https://www.coursera.org/learn/python-network-data,,19.0,0.0,529,4.8,University of Michigan,coursera,www.coursera.org
+Network Security & Database Vulnerabilities,https://www.coursera.org/learn/network-security-database-vulnerabilities,Basic,14.0,0.0,41,4.6,IBM,coursera,www.coursera.org
+Data Privacy Fundamentals,https://www.coursera.org/learn/northeastern-data-privacy,Basic,9.0,0.0,8,4.8,Northeastern University,coursera,www.coursera.org
+NoSQL systems,https://www.coursera.org/learn/nosql-databases,Intermediate,9.0,0.0,9,4.3,Universidad Nacional Aut�noma de M�xico,coursera,www.coursera.org
+Tools for Data Science,https://www.coursera.org/learn/open-source-tools-for-data-science,Basic,19.0,0.0,241,4.5,IBM,coursera,www.coursera.org
+Prediction Models with Sports Data,https://www.coursera.org/learn/prediction-models-sports-data,,33.0,0.0,0,0.0,University of Michigan,coursera,www.coursera.org
+Predictive Analytics and Data Mining,https://www.coursera.org/learn/predictive-analytics-data-mining,Intermediate,24.0,0.0,9,4.4,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Getting Started with SAS Visual Analytics,https://www.coursera.org/learn/preparing-data-sas-va,Basic,5.0,0.0,20,4.7,SAS,coursera,www.coursera.org
+Preparing for the Google Cloud Professional Data Engineer Exam,https://www.coursera.org/learn/preparing-cloud-professional-data-engineer-exam,Advanced,9.0,0.0,35,4.6,Google Cloud,coursera,www.coursera.org
+Privacy Law and Data Protection,https://www.coursera.org/learn/privacy-law-data-protection,,12.0,0.0,13,4.8,University of Pennsylvania,coursera,www.coursera.org
+Probability Theory: Foundation for Data Science,https://www.coursera.org/learn/probability-theory-foundation-for-data-science,Intermediate,48.0,0.0,5,4.2,University of Colorado Boulder,coursera,www.coursera.org
+Scalable Machine Learning on Big Data using Apache Spark,https://www.coursera.org/learn/machine-learning-big-data-apache-spark,Intermediate,7.0,0.0,19,3.8,IBM,coursera,www.coursera.org
+Machine Learning Data Lifecycle in Production,https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production,Advanced,22.0,0.0,13,4.5,DeepLearning.AI,coursera,www.coursera.org
+Machine Learning e Data Mining�in R,https://www.coursera.org/learn/machine-learning-data-mining-con-r,Intermediate,31.0,0.0,0,0.0,Universit� di Napoli Federico II,coursera,www.coursera.org
+Managing Data Analysis,https://www.coursera.org/learn/managing-data-analysis,,9.0,0.0,61,4.6,Johns Hopkins University,coursera,www.coursera.org
+"Managing, Describing, and Analyzing Data",https://www.coursera.org/learn/managing-describing-analyzing-data,Basic,17.0,0.0,2,4.3,University of Colorado Boulder,coursera,www.coursera.org
+Measurement � Turning Concepts into Data,https://www.coursera.org/learn/measurement-turning-concepts-data,Basic,11.0,0.0,0,4.8,Johns Hopkins University,coursera,www.coursera.org
+Foundations of mining non-structured medical data,https://www.coursera.org/learn/mining-medical-data,Basic,7.0,0.0,2,4.0,EIT Digital,coursera,www.coursera.org
+Dealing With Missing Data,https://www.coursera.org/learn/missing-data,,18.0,0.0,10,3.8,"University of Maryland, College Park",coursera,www.coursera.org
+Exploring NCAA Data with BigQuery,https://www.coursera.org/learn/ncaa-data-bigquery,Basic,45.0,0.0,0,0.0,Google Cloud,coursera,www.coursera.org
+Introduction to R Programming for Data Science,https://www.coursera.org/learn/introducton-r-programming-data-science,Basic,11.0,0.0,6,4.6,IBM,coursera,www.coursera.org
+Introduzione alla Data Visualization con Tableau,https://www.coursera.org/learn/introduzione-data-visualization-tableau,Basic,18.0,0.0,0,0.0,Universit� di Napoli Federico II,coursera,www.coursera.org
+"Java Programming: Arrays, Lists, and Structured Data",https://www.coursera.org/learn/java-programming-arrays-lists-data,Basic,14.0,0.0,124,4.7,Duke University,coursera,www.coursera.org
+Inheritance and Data Structures in Java,https://www.coursera.org/learn/java-inheritance-data-structures,Basic,21.0,0.0,2,4.5,University of Pennsylvania,coursera,www.coursera.org
+Data Manipulation in JavaScript,https://www.coursera.org/learn/javascript-data-manipulation,Basic,19.0,0.0,0,0.0,"University of California, Davis",coursera,www.coursera.org
+Advanced Data Visualization with R,https://www.coursera.org/learn/jhu-advanced-data-visualization-r,,11.0,0.0,2,4.8,Johns Hopkins University,coursera,www.coursera.org
+Data Visualization in R with ggplot2,https://www.coursera.org/learn/jhu-data-visualization-r,Intermediate,13.0,0.0,3,4.9,Johns Hopkins University,coursera,www.coursera.org
+Getting Started with Data Visualization in R,https://www.coursera.org/learn/jhu-getting-started-data-viz-r,Basic,12.0,0.0,6,4.8,Johns Hopkins University,coursera,www.coursera.org
+Big Data Applications: Machine Learning at Scale,https://www.coursera.org/learn/machine-learning-applications-big-data,Advanced,28.0,0.0,10,3.8,Yandex,coursera,www.coursera.org
+Introduction to Clinical Data Science,https://www.coursera.org/learn/introduction-clinical-data-science,Intermediate,8.0,0.0,12,4.6,University of Colorado System,coursera,www.coursera.org
+Introduction to Statistics & Data Analysis in Public Health,https://www.coursera.org/learn/introduction-statistics-data-analysis-public-health,Basic,16.0,0.0,31,4.7,Imperial College London,coursera,www.coursera.org
+Introduction to Big Data with Spark and Hadoop,https://www.coursera.org/learn/introduction-to-big-data-with-spark-hadoop,Basic,12.0,0.0,3,4.1,IBM,coursera,www.coursera.org
+Introduction to Data Engineering,https://www.coursera.org/learn/introduction-to-data-engineering,Basic,11.0,0.0,19,4.7,IBM,coursera,www.coursera.org
+Introduction to Designing Data Lakes on AWS,https://www.coursera.org/learn/introduction-to-designing-data-lakes-in-aws,Intermediate,14.0,0.0,6,4.7,Amazon Web Services,coursera,www.coursera.org
+Introduction to Data Analytics,https://www.coursera.org/learn/introduction-to-data-analytics,Basic,11.0,0.0,120,4.8,IBM,coursera,www.coursera.org
+Introduction to Relational Databases (RDBMS),https://www.coursera.org/learn/introduction-to-relational-databases,Basic,14.0,0.0,5,4.6,IBM,coursera,www.coursera.org
+IBM Data Privacy for Information Architecture,https://www.coursera.org/learn/ibm-data-privacy,,10.0,0.0,0,4.7,IBM,coursera,www.coursera.org
+IBM Data Topology,https://www.coursera.org/learn/ibm-data-topology,Intermediate,6.0,0.0,0,4.8,IBM,coursera,www.coursera.org
+Information Security: Context and Introduction,https://www.coursera.org/learn/information-security-data,Basic,24.0,0.0,64,4.7,"University of London,Royal Holloway, University of London",coursera,www.coursera.org
+Innovating with Data and Google Cloud,https://www.coursera.org/learn/innovating-with-data-google-cloud,Basic,2.0,0.0,5,4.8,Google Cloud,coursera,www.coursera.org
+Introduction to Accounting Data Analytics and Visualization,https://www.coursera.org/learn/intro-accounting-data-analytics-visual,Basic,19.0,0.0,18,4.8,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+"Intro to Analytic Thinking, Data Science, and Data Mining",https://www.coursera.org/learn/intro-analyticthinking-datascience-datamining,Intermediate,7.0,0.0,3,4.0,"University of California, Irvine",coursera,www.coursera.org
+Introduction to Clinical Data,https://www.coursera.org/learn/introduction-clinical-data,Basic,12.0,0.0,7,4.6,Stanford University,coursera,www.coursera.org
+Using clinical health data for better healthcare,https://www.coursera.org/learn/healthcare-data,Basic,15.0,0.0,6,4.7,The University of Sydney,coursera,www.coursera.org
+Healthcare Data Literacy,https://www.coursera.org/learn/healthcare-data-literacy,Intermediate,13.0,0.0,9,4.5,"University of California, Davis",coursera,www.coursera.org
+Healthcare Data Quality and Governance,https://www.coursera.org/learn/healthcare-data-quality-governance,Intermediate,12.0,0.0,4,4.5,"University of California, Davis",coursera,www.coursera.org
+AI Workflow: Business Priorities and Data Ingestion,https://www.coursera.org/learn/ibm-ai-workflow-business-priorities-data-ingestion,Intermediate,8.0,0.0,4,4.3,IBM,coursera,www.coursera.org
+AI Workflow: Data Analysis and Hypothesis Testing,https://www.coursera.org/learn/ibm-ai-workflow-data-analysis-hypothesis-testing,Advanced,11.0,0.0,2,4.2,IBM,coursera,www.coursera.org
+Exploratory Data Analysis for Machine Learning,https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning,Intermediate,8.0,0.0,23,4.6,IBM,coursera,www.coursera.org
+Google Cloud Big Data and Machine Learning Fundamentals,https://www.coursera.org/learn/gcp-big-data-ml-fundamentals,Intermediate,12.0,0.0,228,4.7,Google Cloud,coursera,www.coursera.org
+Exploring ?and ?Preparing ?your ?Data with BigQuery,https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery,Basic,13.0,0.0,52,4.7,Google Cloud,coursera,www.coursera.org
+Genomic Data Science and Clustering (Bioinformatics V),https://www.coursera.org/learn/genomic-data,Basic,10.0,0.0,12,4.2,University of California San Diego,coursera,www.coursera.org
+Getting Started with Data Analytics on AWS,https://www.coursera.org/learn/getting-started-data-analytics-aws,Basic,4.0,0.0,7,4.6,Amazon Web Services,coursera,www.coursera.org
+Getting Started with Data Warehousing and BI Analytics,https://www.coursera.org/learn/getting-started-with-data-warehousing-and-bi-analytics,Basic,12.0,0.0,0,0.0,IBM,coursera,www.coursera.org
+"GIS Data Formats, Design and Quality",https://www.coursera.org/learn/gis-data,Intermediate,28.0,0.0,33,4.9,"University of California, Davis",coursera,www.coursera.org
+GIS Data Acquisition and Map Design,https://www.coursera.org/learn/gis-data-acquisition-map-design,Basic,20.0,0.0,18,4.9,University of Toronto,coursera,www.coursera.org
+Google Data Analytics Capstone: Complete a Case Study,https://www.coursera.org/learn/google-data-analytics-capstone,Basic,8.0,0.0,56,4.8,Google,coursera,www.coursera.org
+Healthcare Data Models,https://www.coursera.org/learn/healthcare-data-models,Intermediate,12.0,0.0,4,4.5,"University of California, Davis",coursera,www.coursera.org
+Explore Core Data Concepts in Microsoft Azure,https://www.coursera.org/learn/explore-core-data-concepts-microsoft-azure,Basic,9.0,0.0,3,4.8,Microsoft,coursera,www.coursera.org
+Fitting Statistical Models to Data with Python,https://www.coursera.org/learn/fitting-statistical-models-data-python,Intermediate,16.0,0.0,24,4.4,University of Michigan,coursera,www.coursera.org
+"Foundations: Data, Data, Everywhere",https://www.coursera.org/learn/foundations-data,Basic,20.0,0.0,512,4.8,Google,coursera,www.coursera.org
+Foundations for Big Data Analysis with SQL,https://www.coursera.org/learn/foundations-big-data-analysis-sql,Basic,12.0,0.0,38,4.8,Cloudera,coursera,www.coursera.org
+Fundamentals of Data Analysis,https://www.coursera.org/learn/fundamentals-of-data-analysis,Basic,18.0,0.0,0,0.0,LearnQuest,coursera,www.coursera.org
+Fundamentals of Data Visualization,https://www.coursera.org/learn/fundamentals-of-data-visualization,Intermediate,14.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+Fundamentals of Data Warehousing,https://www.coursera.org/learn/fundamentals-of-data-warehousing,Basic,14.0,0.0,0,0.0,LearnQuest,coursera,www.coursera.org
+Creating New BigQuery Datasets and Visualizing Insights,https://www.coursera.org/learn/gcp-creating-bigquery-datasets-visualizing-insights,Basic,11.0,0.0,18,4.6,Google Cloud,coursera,www.coursera.org
+Create and Lead an Ethical Data-Driven Organization,https://www.coursera.org/learn/ethical-data-driven-technology-leader,Basic,13.0,0.0,2,4.5,CertNexus,coursera,www.coursera.org
+Communicate Effectively about Ethical Challenges in Data-Driven Technologies,https://www.coursera.org/learn/ethical-communication-data-driven-technologies,Basic,14.0,0.0,3,4.4,CertNexus,coursera,www.coursera.org
+Ethical Issues in Data Science,https://www.coursera.org/learn/ethical-issues-data-science,Basic,23.0,0.0,0,4.4,University of Colorado Boulder,coursera,www.coursera.org
+"ETL and Data Pipelines with Shell, Airflow and Kafka",https://www.coursera.org/learn/etl-and-data-pipelines-shell-airflow-kafka,Basic,13.0,0.0,2,4.8,IBM,coursera,www.coursera.org
+Excel Basics for Data Analysis,https://www.coursera.org/learn/excel-basics-data-analysis-ibm,Basic,12.0,0.0,66,4.8,IBM,coursera,www.coursera.org
+Introduction to Data Analysis Using Excel,https://www.coursera.org/learn/excel-data-analysis,,20.0,0.0,209,4.7,Rice University,coursera,www.coursera.org
+Data Visualization in Excel,https://www.coursera.org/learn/excel-data-visualization,Intermediate,18.0,0.0,13,4.9,Macquarie University,coursera,www.coursera.org
+Excel Fundamentals for Data Analysis,https://www.coursera.org/learn/excel-data-analysis-fundamentals,Intermediate,15.0,0.0,67,4.8,Macquarie University,coursera,www.coursera.org
+Executive Data Science Capstone,https://www.coursera.org/learn/executive-data-science-capstone,,2.0,0.0,13,4.7,Johns Hopkins University,coursera,www.coursera.org
+Exploratory Data Analysis,https://www.coursera.org/learn/exploratory-data-analysis,,55.0,0.0,163,4.7,Johns Hopkins University,coursera,www.coursera.org
+Exploratory Data Analysis with MATLAB,https://www.coursera.org/learn/exploratory-data-analysis-matlab,Basic,19.0,0.0,30,4.8,MathWorks,coursera,www.coursera.org
+"Data Wrangling, Analysis and AB Testing with SQL",https://www.coursera.org/learn/data-wrangling-analysis-abtesting,Intermediate,16.0,0.0,30,3.5,"University of California, Davis",coursera,www.coursera.org
+Creating Dashboards and Storytelling with Tableau,https://www.coursera.org/learn/dataviz-dashboards,Basic,15.0,0.0,37,4.6,"University of California, Davis",coursera,www.coursera.org
+Visual Analytics with Tableau,https://www.coursera.org/learn/dataviz-visual-analytics,Basic,9.0,0.0,40,4.6,"University of California, Davis",coursera,www.coursera.org
+Data Visualization with Tableau Project,https://www.coursera.org/learn/dataviz-project,Intermediate,12.0,0.0,21,4.6,"University of California, Davis",coursera,www.coursera.org
+Essential Design Principles for Tableau,https://www.coursera.org/learn/dataviz-design,Basic,13.0,0.0,44,4.5,"University of California, Davis",coursera,www.coursera.org
+Data Visualization,https://www.coursera.org/learn/datavisualization,,15.0,0.0,106,4.5,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Design Thinking and Predictive Analytics for Data Products,https://www.coursera.org/learn/design-thinking-predictive-analytics-data-products,Intermediate,8.0,0.0,7,4.5,University of California San Diego,coursera,www.coursera.org
+Serverless Data Processing with Dataflow: Develop Pipelines,https://www.coursera.org/learn/developing-pipelines-on-dataflow,Advanced,19.0,0.0,0,4.0,Google Cloud,coursera,www.coursera.org
+"Developing Applications with SQL, Databases, and Django ",https://www.coursera.org/learn/developing-applications-with-sql-databases-and-django,Intermediate,15.0,0.0,4,4.5,IBM,coursera,www.coursera.org
+Web Application Technologies and Django,https://www.coursera.org/learn/django-database-web-apps,Intermediate,15.0,0.0,57,4.7,University of Michigan,coursera,www.coursera.org
+Amazon DynamoDB: Building NoSQL Database-Driven Applications,https://www.coursera.org/learn/dynamodb-nosql-database-driven-apps,Intermediate,10.0,0.0,10,4.7,Amazon Web Services,coursera,www.coursera.org
+Enterprise Database Migration,https://www.coursera.org/learn/enterprise-database-migration,Intermediate,19.0,0.0,2,0.0,Google Cloud,coursera,www.coursera.org
+Building Database Applications in PHP,https://www.coursera.org/learn/database-applications-php,Intermediate,24.0,0.0,39,4.9,University of Michigan,coursera,www.coursera.org
+Data Science Math Skills,https://www.coursera.org/learn/datasciencemathskills,Basic,13.0,0.0,289,4.5,Duke University,coursera,www.coursera.org
+"Database Architecture, Scale, and NoSQL with Elasticsearch",https://www.coursera.org/learn/database-architecture-scale-nosql-elasticsearch-postgresql,Intermediate,10.0,0.0,2,4.3,University of Michigan,coursera,www.coursera.org
+Database Design and Basic SQL in PostgreSQL,https://www.coursera.org/learn/database-design-postgresql,Intermediate,14.0,0.0,10,4.8,University of Michigan,coursera,www.coursera.org
+Database Management Essentials,https://www.coursera.org/learn/database-management,Intermediate,36.0,0.0,160,4.6,University of Colorado System,coursera,www.coursera.org
+Data Science at Scale - Capstone Project,https://www.coursera.org/learn/datasci-capstone,,6.0,0.0,2,4.1,University of Washington,coursera,www.coursera.org
+Data Science in Stratified Healthcare and Precision Medicine,https://www.coursera.org/learn/datascimed,Intermediate,17.0,0.0,16,4.6,The University of Edinburgh,coursera,www.coursera.org
+Data Structures and Design Patterns for Game Developers,https://www.coursera.org/learn/data-structures-design-patterns,Intermediate,22.0,0.0,13,4.6,University of Colorado System,coursera,www.coursera.org
+Data Management and Visualization,https://www.coursera.org/learn/data-visualization,,12.0,0.0,75,4.4,Wesleyan University,coursera,www.coursera.org
+Data Visualization and Dashboards with Excel and Cognos,https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos,Basic,9.0,0.0,27,4.7,IBM,coursera,www.coursera.org
+Data Visualization with R,https://www.coursera.org/learn/data-visualization-r,Basic,10.0,0.0,1,0.0,IBM,coursera,www.coursera.org
+Design and Build a Data Warehouse for Business Intelligence Implementation,https://www.coursera.org/learn/data-warehouse-bi-building,,13.0,0.0,8,4.6,University of Colorado System,coursera,www.coursera.org
+3D Data Visualization for Science Communication,https://www.coursera.org/learn/data-visualization-science-communication,Basic,32.0,0.0,3,0.0,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Publishing Visualizations in R with Shiny and flexdashboard,https://www.coursera.org/learn/data-viz-shiny-dashboards,,12.0,0.0,1,4.9,Johns Hopkins University,coursera,www.coursera.org
+Fundamentals of Visualization with Tableau,https://www.coursera.org/learn/data-visualization-tableau,Basic,11.0,0.0,139,4.5,"University of California, Davis",coursera,www.coursera.org
+Modern Data Warehouse Analytics in Microsoft Azure,https://www.coursera.org/learn/data-warehouse-analytics-microsoft-azure,Basic,4.0,0.0,0,4.5,Microsoft,coursera,www.coursera.org
+The Data Scientist�s Toolbox,https://www.coursera.org/learn/data-scientists-tools,,18.0,0.0,653,4.6,Johns Hopkins University,coursera,www.coursera.org
+Data Science on Google Cloud: Machine Learning,https://www.coursera.org/learn/data-science-machine-learning-google-cloud,Advanced,7.0,0.0,0,0.0,Google Cloud,coursera,www.coursera.org
+Data Science Methodology,https://www.coursera.org/learn/data-science-methodology,Basic,8.0,0.0,164,4.6,IBM,coursera,www.coursera.org
+"Data, Security, and Privacy",https://www.coursera.org/learn/data-security-privacy,Basic,13.0,0.0,0,0.0,"University of California, Irvine",coursera,www.coursera.org
+Data Visualization Capstone,https://www.coursera.org/learn/data-visualization-capstone,,22.0,0.0,0,4.9,Johns Hopkins University,coursera,www.coursera.org
+Data Structures and Performance,https://www.coursera.org/learn/data-structures-optimizing-performance,Intermediate,42.0,0.0,84,4.8,University of California San Diego,coursera,www.coursera.org
+Data Structures,https://www.coursera.org/learn/data-structures,Intermediate,25.0,0.0,205,4.6,"University of California San Diego,HSE University",coursera,www.coursera.org
+Data and Health Indicators in Public Health Practice,https://www.coursera.org/learn/data-public-health,Basic,6.0,0.0,26,4.7,Johns Hopkins University,coursera,www.coursera.org
+Foundations of Data Science: K-Means Clustering in Python,https://www.coursera.org/learn/data-science-k-means-clustering-python,Basic,29.0,0.0,23,4.7,"University of London,Goldsmiths, University of London",coursera,www.coursera.org
+Data Science Fundamentals for Data Analysts,https://www.coursera.org/learn/data-science-fundamentals-for-data-analysts,Intermediate,19.0,0.0,3,3.7,Databricks,coursera,www.coursera.org
+A Crash Course in Data Science,https://www.coursera.org/learn/data-science-course,Basic,7.0,0.0,179,4.5,Johns Hopkins University,coursera,www.coursera.org
+Data Science as a Field,https://www.coursera.org/learn/data-science-as-a-field,Intermediate,10.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+Data Science on Google Cloud,https://www.coursera.org/learn/data-science-google-cloud,Advanced,11.0,0.0,0,0.0,Google Cloud,coursera,www.coursera.org
+Data Science for Business Innovation,https://www.coursera.org/learn/data-science-for-business-innovation,Basic,7.0,0.0,7,4.3,"EIT Digital ,Politecnico di Milano",coursera,www.coursera.org
+Introduction to Data Science and scikit-learn in Python,https://www.coursera.org/learn/data-science-and-scikit-learn-in-python,Basic,14.0,0.0,0,0.0,LearnQuest,coursera,www.coursera.org
+Data Science Ethics,https://www.coursera.org/learn/data-science-ethics,Basic,15.0,0.0,23,4.8,University of Michigan,coursera,www.coursera.org
+Data Science with R - Capstone Project,https://www.coursera.org/learn/data-science-with-r-capstone-project,Intermediate,15.0,0.0,0,0.0,IBM,coursera,www.coursera.org
+Data Manipulation at Scale: Systems and Algorithms,https://www.coursera.org/learn/data-manipulation,,20.0,0.0,57,4.3,University of Washington,coursera,www.coursera.org
+Data Mining Project,https://www.coursera.org/learn/data-mining-project,,11.0,0.0,6,4.6,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Research Data Management and Sharing,https://www.coursera.org/learn/data-management,,14.0,0.0,27,4.7,"The University of North Carolina at Chapel Hill,The University of Edinburgh",coursera,www.coursera.org
+Pattern Discovery in Data Mining,https://www.coursera.org/learn/data-patterns,,17.0,0.0,36,4.3,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Data Modeling and Regression Analysis in Business,https://www.coursera.org/learn/data-modeling-regression-analysis-business,Intermediate,25.0,0.0,6,4.3,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Data Pipelines with TensorFlow Data Services,https://www.coursera.org/learn/data-pipelines-tensorflow,Intermediate,16.0,0.0,15,4.3,DeepLearning.AI,coursera,www.coursera.org
+Developing Data Products,https://www.coursera.org/learn/data-products,,10.0,0.0,78,4.6,Johns Hopkins University,coursera,www.coursera.org
+Prepare Data for Exploration,https://www.coursera.org/learn/data-preparation,Basic,22.0,0.0,119,4.8,Google,coursera,www.coursera.org
+Communicating Data Science Results,https://www.coursera.org/learn/data-results,,8.0,0.0,15,3.6,University of Washington,coursera,www.coursera.org
+Data Processing with Azure,https://www.coursera.org/learn/data-processing-with-azure,Intermediate,13.0,0.0,6,3.7,LearnQuest,coursera,www.coursera.org
+Data for Machine Learning,https://www.coursera.org/learn/data-machine-learning,Intermediate,12.0,0.0,6,4.4,Alberta Machine Intelligence Institute,coursera,www.coursera.org
+Data Literacy Capstone � Evaluating Research,https://www.coursera.org/learn/data-literacy-capstone-evaluating-research,Intermediate,6.0,0.0,0,0.0,Johns Hopkins University,coursera,www.coursera.org
+Applying Machine Learning to your Data with GCP,https://www.coursera.org/learn/data-insights-gcp-apply-ml,Intermediate,10.0,0.0,14,4.7,Google Cloud,coursera,www.coursera.org
+Modernizing Data Lakes and Data Warehouses with GCP,https://www.coursera.org/learn/data-lakes-data-warehouses-gcp,Intermediate,9.0,0.0,33,4.7,Google Cloud,coursera,www.coursera.org
+"Big Data, Genes, and Medicine",https://www.coursera.org/learn/data-genes-medicine,Advanced,40.0,0.0,27,4.3,The State University of New York,coursera,www.coursera.org
+Data Engineering and Machine Learning using Spark,https://www.coursera.org/learn/data-engineering-and-machine-learning-using-spark,Basic,7.0,0.0,1,3.7,IBM,coursera,www.coursera.org
+Designing data-intensive applications,https://www.coursera.org/learn/data-intensive-applications,Intermediate,7.0,0.0,5,4.4,Universidad Nacional Aut�noma de M�xico,coursera,www.coursera.org
+Data Mining Pipeline,https://www.coursera.org/learn/data-mining-pipeline,Intermediate,21.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+Data Mining Methods,https://www.coursera.org/learn/data-mining-methods,Intermediate,22.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+Data Mining Project,https://www.coursera.org/learn/data-mining-theory-practice-project,Intermediate,37.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+Data Analytics Foundations for Accountancy II,https://www.coursera.org/learn/data-analytics-accountancy-2,,70.0,0.0,2,0.0,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Data Analysis and Visualization,https://www.coursera.org/learn/data-analyze-visualize,Basic,11.0,0.0,3,4.4,"University at Buffalo,The State University of New York",coursera,www.coursera.org
+Data Analytics for Lean Six Sigma,https://www.coursera.org/learn/data-analytics-for-lean-six-sigma,Basic,11.0,0.0,47,4.8,University of Amsterdam,coursera,www.coursera.org
+Combining and Analyzing Complex Data,https://www.coursera.org/learn/data-collection-analytics-project,,10.0,0.0,7,4.2,"University of Maryland, College Park",coursera,www.coursera.org
+Getting and Cleaning Data,https://www.coursera.org/learn/data-cleaning,,20.0,0.0,189,4.6,Johns Hopkins University,coursera,www.coursera.org
+Framework for Data Collection and Analysis,https://www.coursera.org/learn/data-collection-framework,Intermediate,10.0,0.0,23,4.2,"University of Maryland, College Park",coursera,www.coursera.org
+Data-driven Astronomy,https://www.coursera.org/learn/data-driven-astronomy,Intermediate,24.0,0.0,25,4.8,The University of Sydney,coursera,www.coursera.org
+Data-Driven Process Improvement,https://www.coursera.org/learn/data-driven-process-improvement,Basic,9.0,0.0,3,4.4,"University at Buffalo,The State University of New York",coursera,www.coursera.org
+Data Collection and Processing with Python,https://www.coursera.org/learn/data-collection-processing-python,Intermediate,16.0,0.0,59,4.7,University of Michigan,coursera,www.coursera.org
+"Data Collection: Online, Telephone and Face-to-face",https://www.coursera.org/learn/data-collection-methods,Basic,21.0,0.0,11,4.6,University of Michigan,coursera,www.coursera.org
+How to Win a Data Science Competition: Learn from Top Kagglers,https://www.coursera.org/learn/competitive-data-science,Advanced,54.0,0.0,105,4.7,HSE University,coursera,www.coursera.org
+Contemporary Data Analysis: Survey and Best Practices,https://www.coursera.org/learn/contemporary-data-analysis,Basic,16.0,0.0,0,0.0,HSE University,coursera,www.coursera.org
+Cybersecurity for Data Science,https://www.coursera.org/learn/cybersecurity-for-data-science,Basic,19.0,0.0,0,0.0,University of Colorado Boulder,coursera,www.coursera.org
+Data Analysis and Interpretation Capstone,https://www.coursera.org/learn/data-analysis-capstone,,8.0,0.0,3,4.7,Wesleyan University,coursera,www.coursera.org
+Data Analysis and Presentation Skills: the PwC Approach Final Project,https://www.coursera.org/learn/data-analysis-project-pwc,Basic,11.0,0.0,3,4.8,PwC,coursera,www.coursera.org
+Data Analysis with R Programming,https://www.coursera.org/learn/data-analysis-r,Basic,37.0,0.0,71,4.8,Google,coursera,www.coursera.org
+Data Analysis Tools,https://www.coursera.org/learn/data-analysis-tools,,10.0,0.0,42,4.5,Wesleyan University,coursera,www.coursera.org
+"Data Analysis and Representation, Selection and Iteration",https://www.coursera.org/learn/data-analysis-representation-selection-iteration,Basic,11.0,0.0,3,4.7,University of Colorado System,coursera,www.coursera.org
+Data Analysis Using Python,https://www.coursera.org/learn/data-analysis-python,Basic,17.0,0.0,5,4.6,University of Pennsylvania,coursera,www.coursera.org
+Data Analysis with Python,https://www.coursera.org/learn/data-analysis-with-python,Basic,15.0,0.0,213,4.7,IBM,coursera,www.coursera.org
+Data Analysis and Reporting in SAS Visual Analytics,https://www.coursera.org/learn/data-analysis-reporting-sas-va,,9.0,0.0,10,4.8,SAS,coursera,www.coursera.org
+Data Analysis with R,https://www.coursera.org/learn/data-analysis-with-r,Intermediate,14.0,0.0,2,4.9,IBM,coursera,www.coursera.org
+Data Analytics Foundations for Accountancy I,https://www.coursera.org/learn/data-analytics-accountancy-1,,67.0,0.0,7,4.1,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Clinical Data Models and Data Quality Assessments,https://www.coursera.org/learn/clinical-data-models-and-data-quality-assessments,Intermediate,17.0,0.0,4,4.2,University of Colorado System,coursera,www.coursera.org
+Cloud Data Security,https://www.coursera.org/learn/cloud-data-security,Intermediate,11.0,0.0,0,0.0,University of Minnesota,coursera,www.coursera.org
+Building Advanced Codeless Pipelines on Cloud Data Fusion,https://www.coursera.org/learn/cloud-data-fusion-building-advanced-codeless-pipelines,Advanced,6.0,0.0,0,4.3,Google Cloud,coursera,www.coursera.org
+Cloud Data Engineering,https://www.coursera.org/learn/cloud-data-engineering-duke,Intermediate,17.0,0.0,1,4.5,Duke University,coursera,www.coursera.org
+Managing Big Data in Clusters and Cloud Storage,https://www.coursera.org/learn/cloud-storage-big-data-analysis-sql,Basic,21.0,0.0,9,4.7,Cloudera,coursera,www.coursera.org
+Analyzing Big Data with SQL,https://www.coursera.org/learn/cloudera-big-data-analysis-sql-queries,Basic,18.0,0.0,20,4.9,Cloudera,coursera,www.coursera.org
+Code Free Data Science,https://www.coursera.org/learn/code-free-data-science,Basic,14.0,0.0,10,4.3,University of California San Diego,coursera,www.coursera.org
+Calculus through Data & Modeling: Precalculus Review,https://www.coursera.org/learn/calculus-through-data-and-modelling-precalculus-review,Basic,8.0,0.0,2,4.8,Johns Hopkins University,coursera,www.coursera.org
+Calculus through Data & Modeling: Applying Differentiation,https://www.coursera.org/learn/calculus-through-data-and-modelling-applying-differentiation,Intermediate,7.0,0.0,0,4.7,Johns Hopkins University,coursera,www.coursera.org
+Calculus through Data & Modelling: Series and Integration,https://www.coursera.org/learn/calculus-through-data-and-modelling-series-and-integrals,Intermediate,9.0,0.0,0,5.0,Johns Hopkins University,coursera,www.coursera.org
+Calculus through Data & Modeling: Differentiation Rules,https://www.coursera.org/learn/calculus-through-data-and-modelling-differentiation-rules,Intermediate,8.0,0.0,0,4.8,Johns Hopkins University,coursera,www.coursera.org
+Calculus through Data & Modelling: Techniques of Integration,https://www.coursera.org/learn/calculus-through-data-and-modelling-techniques-of-integration,Intermediate,5.0,0.0,0,0.0,Johns Hopkins University,coursera,www.coursera.org
+Calculus through Data & Modelling: Vector Calculus,https://www.coursera.org/learn/calculus-through-data-and-modelling-vector-calculus,Intermediate,5.0,0.0,0,4.8,Johns Hopkins University,coursera,www.coursera.org
+Data Management for Clinical Research,https://www.coursera.org/learn/clinical-data-management,Basic,17.0,0.0,72,4.7,Vanderbilt University,coursera,www.coursera.org
+Big Data Modeling and Management Systems,https://www.coursera.org/learn/big-data-management,,13.0,0.0,83,4.4,University of California San Diego,coursera,www.coursera.org
+BigQuery Basics for Data Analysts,https://www.coursera.org/learn/bigquery-basics-data-analysts,Basic,5.0,0.0,3,4.7,Google Cloud,coursera,www.coursera.org
+Big Data Services: Capstone Project,https://www.coursera.org/learn/big-data-services,Advanced,3.0,0.0,1,0.0,Yandex,coursera,www.coursera.org
+Building a Data Science Team,https://www.coursera.org/learn/build-data-science-team,,6.0,0.0,42,4.5,Johns Hopkins University,coursera,www.coursera.org
+Exploring and Producing Data for Business Decision Making,https://www.coursera.org/learn/business-data,Basic,23.0,0.0,33,4.8,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Business intelligence and data analytics: Generate insights,https://www.coursera.org/learn/business-intelligence-data-analytics,,13.0,0.0,11,4.5,Macquarie University,coursera,www.coursera.org
+Business intelligence and data warehousing,https://www.coursera.org/learn/business-intelligence-data-warehousing,Intermediate,10.0,0.0,10,3.9,Universidad Nacional Aut�noma de M�xico,coursera,www.coursera.org
+Calculus through Data & Modelling: Integration Applications,https://www.coursera.org/learn/calculus-through-data-and-modelling-integration-applications,Intermediate,6.0,0.0,0,0.0,Johns Hopkins University,coursera,www.coursera.org
+Calculus through Data & Modeling: Limits & Derivatives,https://www.coursera.org/learn/calculus-through-data-and-modelling-imits-derivatives,Basic,10.0,0.0,0,4.8,Johns Hopkins University,coursera,www.coursera.org
+Big Data Analysis Deep Dive,https://www.coursera.org/learn/big-data-analysis-deep-dive,Intermediate,14.0,0.0,0,0.0,Alibaba Cloud Academy,coursera,www.coursera.org
+Big data and Language 1,https://www.coursera.org/learn/big-data-language-1,Basic,4.0,0.0,5,4.5,Korea Advanced Institute of Science and Technology(KAIST),coursera,www.coursera.org
+"Big Data Essentials: HDFS, MapReduce and Spark RDD",https://www.coursera.org/learn/big-data-essentials,Intermediate,41.0,0.0,51,3.9,Yandex,coursera,www.coursera.org
+Big Data Emerging Technologies,https://www.coursera.org/learn/big-data-emerging-technologies,Basic,30.0,0.0,18,4.7,Yonsei University,coursera,www.coursera.org
+Introduction to Big Data,https://www.coursera.org/learn/big-data-introduction,,17.0,0.0,272,4.6,University of California San Diego,coursera,www.coursera.org
+Graph Analytics for Big Data,https://www.coursera.org/learn/big-data-graph-analytics,,13.0,0.0,42,4.3,University of California San Diego,coursera,www.coursera.org
+Big data and Language 2,https://www.coursera.org/learn/big-data-language-2,Basic,5.0,0.0,2,0.0,Korea Advanced Institute of Science and Technology(KAIST),coursera,www.coursera.org
+Big Data - Capstone Project,https://www.coursera.org/learn/big-data-project,,21.0,0.0,13,4.4,University of California San Diego,coursera,www.coursera.org
+Machine Learning With Big Data,https://www.coursera.org/learn/big-data-machine-learning,,22.0,0.0,61,4.6,University of California San Diego,coursera,www.coursera.org
+Applying Data Analytics in Finance,https://www.coursera.org/learn/applying-data-analytics-business-in-finance,Intermediate,23.0,0.0,15,4.5,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Applying Data Analytics in Marketing,https://www.coursera.org/learn/applying-data-analytics-business-in-marketing,Intermediate,12.0,0.0,15,4.5,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Using Asylo to Protect Secret Data from an Attacker with Root Privileges,https://www.coursera.org/learn/asylo-protect-secret-data,Intermediate,1.0,0.0,0,0.0,Google Cloud,coursera,www.coursera.org
+Analyze Datasets and Train ML Models using AutoML,https://www.coursera.org/learn/automl-datasets-ml-models,Advanced,19.0,0.0,11,4.5,"DeepLearning.AI,Amazon Web Services",coursera,www.coursera.org
+Basic Data Processing and Visualization,https://www.coursera.org/learn/basic-data-processing-visualization-python,Intermediate,11.0,0.0,17,4.3,University of California San Diego,coursera,www.coursera.org
+"Big Data, Artificial Intelligence, and Ethics",https://www.coursera.org/learn/big-data-ai-ethics,Basic,12.0,0.0,18,4.6,"University of California, Davis",coursera,www.coursera.org
+Building Batch Data Pipelines on GCP,https://www.coursera.org/learn/batch-data-pipelines-gcp,Intermediate,13.0,0.0,30,4.5,Google Cloud,coursera,www.coursera.org
+Big Data Integration and Processing,https://www.coursera.org/learn/big-data-integration-processing,Basic,18.0,0.0,64,4.4,University of California San Diego,coursera,www.coursera.org
+Advanced Data Science Capstone,https://www.coursera.org/learn/advanced-data-science-capstone,Advanced,9.0,0.0,13,4.6,IBM,coursera,www.coursera.org
+Advanced Clinical Data Science,https://www.coursera.org/learn/advanced-clinical-data-science,Intermediate,4.0,0.0,0,0.0,University of Colorado System,coursera,www.coursera.org
+Artificial Intelligence Data Fairness and Bias						,https://www.coursera.org/learn/ai-data-bias,Basic,6.0,0.0,3,4.8,LearnQuest,coursera,www.coursera.org
+"Algorithms, Data Collection, and Starting to Code",https://www.coursera.org/learn/algorithms-data-collection-code,Basic,15.0,0.0,16,4.6,University of Colorado System,coursera,www.coursera.org
+"Graph Search, Shortest Paths, and Data Structures",https://www.coursera.org/learn/algorithms-graphs-data-structures,Intermediate,15.0,0.0,66,4.8,Stanford University,coursera,www.coursera.org
+Big Data Analytical Platform on Alibaba Cloud,https://www.coursera.org/learn/alibabacloudbigdata,Intermediate,8.0,0.0,0,4.4,Alibaba Cloud Academy,coursera,www.coursera.org
+Analyze Data to Answer Questions,https://www.coursera.org/learn/analyze-data,Basic,26.0,0.0,78,4.6,Google,coursera,www.coursera.org
+Applied Analytics and Data for Decision Making,https://www.coursera.org/learn/analytics-data-decisions,Basic,11.0,0.0,0,4.5,"University at Buffalo,The State University of New York",coursera,www.coursera.org
+Apache Spark (TM) SQL for Data Analysts,https://www.coursera.org/learn/apache-spark-sql-for-data-analysts,Intermediate,14.0,0.0,9,4.6,Databricks,coursera,www.coursera.org
+Introduction to Data Science in Python,https://www.coursera.org/learn/python-data-analysis,Intermediate,31.0,0.0,634,4.5,University of Michigan,coursera,www.coursera.org
+"Healthcare Data Security, Privacy, and Compliance",https://www.coursera.org/learn/healthcare-data-security,Basic,6.0,0.0,2,4.7,Johns Hopkins University,coursera,www.coursera.org
+Fundamentals of Big Data,https://www.coursera.org/learn/fundamentals-of-big-data,,12.0,0.0,0,0.0,LearnQuest,coursera,www.coursera.org
+"Big Data Analysis: Hive, Spark SQL, DataFrames and GraphFrames",https://www.coursera.org/learn/big-data-analysis,Advanced,37.0,0.0,29,4.0,Yandex,coursera,www.coursera.org
+Data Analytics in Accounting Capstone,https://www.coursera.org/learn/accounting-data-analytics-capstone,Intermediate,19.0,0.0,1,0.0,University of Illinois at Urbana-Champaign,coursera,www.coursera.org
+Accounting Data Analytics with Python,https://www.coursera.org/learn/accounting-data-analytics-python,Intermediate,32.0,0.0,8,4.1,University of Illinois at Urbana-Champaign,coursera,www.coursera.org

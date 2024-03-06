@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block title %} Search Page {% endblock %}
+
+{% block content %}
+
+<div class="home">
+
+    <!-- Hero Slider -->
+    <div class="hero_slider_container centerAll" style="padding: 140px 40px 40px 10px;" >
+      
+            <form action="/searchData" method="post" class="formFormat" id="searchForm">
+              <div class="alert alert-danger" role="alert" id="alertPL" hidden>
+                Programming language can not be empty
+              </div>
+                <div class="form-row">
+                <div class="form-group col-md-8">
+                    
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <input type="text" class="bgOrange form-control textBoldColor"  id="plLabel" value="Programming Language" readonly>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <input type="text" class="form-control" id="inputProgrammingLanguage" name="inputProgrammingLanguage">
+                  </div>
+              
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <input type="text" class="bgYellow form-control textBoldColor"  id="fwLabel" value="Framework" readonly>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <input type="text" class="form-control" id="inputFramework" name="inputFramework">
+                  </div>
+              
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <input type="text" class="bgOrange form-control textBoldColor"  id="plLabel" value="Knowledge" readonly>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <input type="text" class="form-control" id="inputKnowledge" name="inputKnowledge">
+                  </div>
+              
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <input type="text" class="bgYellow form-control textBoldColor"  id="plLabel" value="Tool" readonly>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <input type="text" class="form-control" id="inputTool" name="inputTool">
+                  </div>
+              
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <input type="text" class="bgOrange form-control textBoldColor"  id="plLabel" value="Platform" readonly>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <input type="text" class="form-control" id="inputPlatform" name="inputPlatform">
+                  </div>
+              
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Fill by my skills
+                    </label>
+                  </div>
+                </div>
+                <div class="form-row">
+
+                <div class="form-group col-md-4">
+                  <input type="text"  id="option" name="option" value="Find Course" readonly hidden>
+                </div>
+                <div class="form-group col-md-4">
+                  <button id="findCourseButton" type="submit" class="search_submit_button buttonBorder bgOrange textBoldColor" value="findCourse">Find Course</button>
+                </div>
+                <div class="form-group col-md-4">
+                  <button id="findJobButton" type="submit" class="search_submit_button buttonBorder bgYellow textBoldColor" value="findJob">Find Job</button>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="form-group col-md-4">
+                    <img src="Frontend/images/searchImageAnya.png" width="400" height="500">
+                </div>
+                </div>
+                 
+                
+              </form>
+            
+
+
+     </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$('#searchForm').on('submit', function (e) {
+  e.preventDefault();
+  // Check  the input field, the programming language can not be empty
+  const ProgrammingLanguage = $('#inputProgrammingLanguage').val();
+
+  console.log(ProgrammingLanguage);
+  if (!ProgrammingLanguage) {
+    document.getElementById("alertPL").removeAttribute('hidden');
+  }
+  else {
+    document.getElementById("option").value = $(document.activeElement).val();
+
+
+    document.getElementById("alertPL").innerHTML = "";
+    $('#searchForm').submit();
+  }
+
+});
+
+
+</script>
+
+{% endblock %}

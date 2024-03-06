@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{% block title %} {% endblock %}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Frontend/styles/bootstrap4/bootstrap.min.css">
+<link href="Frontend/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="Frontend/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="Frontend/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="Frontend/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="Frontend/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="Frontend/styles/responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<style>
+	input[readonly].bgBrownOrange {
+		background-color: #4F200D;
+	}
+
+	.bgBrownOrange {
+		background-color: #4F200D;
+	}
+
+	input[readonly].bgOrange {
+		background-color: #FFB607;
+	}
+
+	.bgOrange {
+		background-color: #FFB607;
+	}
+
+
+	input[readonly].bgYellow {
+		background-color: #FFD93D;
+	}
+
+	.bgYellow {
+		background-color: #FFD93D;
+	}
+
+	input[readonly].bgCream {
+		background-color: #F6F1E9;
+	}
+	.bgCream {
+		background-color: #F6F1E9;
+	}
+
+	.textBoldColor {
+		color: #4F200D;
+		font-weight: bold;
+	}
+
+	.centerAll {
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		height: 100vh; /* Full height of the viewport */
+	}
+
+	.formFormat {
+		width: 1200px;		
+		padding-top: 140px;
+		align-items: center;
+
+	}
+
+
+	.buttonBorder {
+    	border-radius: 5px;
+		font-weight: bold;
+	}
+
+	.dropdownCustom{
+		height: 40px;
+		width: 100%;
+		border-radius: 5px;
+		border: 0px;
+
+	}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<img src="Frontend/images/logo.png" alt="">
+					<span>course</span>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="/">home</a></li>
+						<li class="main_nav_item"><a href="/"></a></li>
+						<li class="main_nav_item"><a href="Frontend/courses.html">Course Consulting</a></li>
+						<li class="main_nav_item"><a href="Frontend/elements.html">Job Consulting</a></li>
+						<li class="main_nav_item"><a href="Frontend/news.html">Profile</a></li>
+						<li class="main_nav_item"><a href="/search">Search</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="Frontend/images/phone-call.svg" alt="">
+			<span>+43 4566 7788 2457</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+	<!-- Menu -->
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="/">Home</a></li>
+					<li class="menu_item menu_mm"><a href="/">About us</a></li>
+					<li class="menu_item menu_mm"><a href="/">Course Consulting</a></li>
+					<li class="menu_item menu_mm"><a href="Frontend/elements.html">Job Consulting</a></li>
+					<li class="menu_item menu_mm"><a href="Frontend/news.html">Profile</a></li>
+					<li class="menu_item menu_mm"><a href="/search">Search</a></li>
+				</ul>
+
+				<!-- Menu Social -->
+				
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	{% block content %} {% endblock %}
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+			<!-- Newsletter -->
+
+			<div class="newsletter">
+				<div class="row">
+					<div class="col">
+						<div class="section_title text-center">
+							<h1>Subscribe to newsletter</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center">
+						<div class="newsletter_form_container mx-auto">
+							<form action="post">
+								<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
+									<input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" data-error="Valid email is required.">
+									<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+
+					<!-- Footer Column - About -->
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="Frontend/images/logo.png" alt="">
+								<span>course</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Menu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="/">Home</a></li>
+								<li class="footer_list_item"><a href="/">About Us</a></li>
+								<li class="footer_list_item"><a href="Frontend/courses.html">Courses</a></li>
+								<li class="footer_list_item"><a href="Frontend/news.html">News</a></li>
+								<li class="footer_list_item"><a href="Frontend/contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Usefull Links</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="/">Testimonials</a></li>
+								<li class="footer_list_item"><a href="/">FAQ</a></li>
+								<li class="footer_list_item"><a href="/">Community</a></li>
+								<li class="footer_list_item"><a href="/">Campus Pictures</a></li>
+								<li class="footer_list_item"><a href="/">Tuitions</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="Frontend/images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Blvd Libertad, 34 m05200 Arévalo
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="Frontend/images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0034 37483 2445 322
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="Frontend/images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>hello@company.com
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="Frontend/https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="Frontend/js/jquery-3.2.1.min.js"></script>
+<script src="Frontend/styles/bootstrap4/popper.js"></script>
+<script src="Frontend/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="Frontend/plugins/greensock/TweenMax.min.js"></script>
+<script src="Frontend/plugins/greensock/TimelineMax.min.js"></script>
+<script src="Frontend/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="Frontend/plugins/greensock/animation.gsap.min.js"></script>
+<script src="Frontend/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="Frontend/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="Frontend/plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="Frontend/plugins/easing/easing.js"></script>
+<script src="Frontend/js/custom.js"></script>
+</body>
+</html>
