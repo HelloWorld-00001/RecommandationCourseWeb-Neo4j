@@ -34,6 +34,12 @@ class CompetencyController():
 
         return res
     
+
+    def getTotalLen(self):
+        lenght = 0
+        for com in self.CompetencyAttr:
+            lenght += len(self.competencies[com])
+        return lenght
     
     
     def makeCompetencyCondition(self, CompetencyAttr, sign, CompeValue):
@@ -42,14 +48,28 @@ class CompetencyController():
             return ""
         where = f"where {sign}.{CompetencyAttr} in {hp.toUpperList(CompeValue)}"
         return where
+    
+    def makeCompetencyConditionSpecial(self, CompetencyAttr, sign, CompeValue):
+        # Assuming hp.toUpperList is a method from another module or a static method defined elsewhere
+        if CompeValue is None or len(CompeValue) < 1:
+            return f'where {sign}.{CompetencyAttr} = \"hahaha\"'
+        where = f"where {sign}.{CompetencyAttr} in {hp.toUpperList(CompeValue)}"
+        return where
 
     
     def makeCompetencyConditionAll(self):
         conditions = {}
         # Since makeCompetencyConditon is now a static method, it should be called directly on the class
         for com in self.CompetencyAttr:
-            print(com)
             conditions[self.CompetencyAttr[com][0]] = self.makeCompetencyCondition(self.CompetencyAttr[com][1], self.CompetencyAttr[com][2], self.competencies[com])
 
-        hp.printEntity(conditions)
         return conditions
+    
+    def makeCompetencyConditionAllSpecial(self):
+        conditions = {}
+        # Since makeCompetencyConditon is now a static method, it should be called directly on the class
+        for com in self.CompetencyAttr:
+            conditions[self.CompetencyAttr[com][0]] = self.makeCompetencyConditionSpecial(self.CompetencyAttr[com][1], self.CompetencyAttr[com][2], self.competencies[com])
+
+        return conditions
+

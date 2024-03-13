@@ -26,6 +26,21 @@ class SearchController():
 
 
         return condition
+    
+    def compactList(self, list, size=7):
+        list = list[:size]
+        return list
+    
+    def list2string(self, listz):
+
+        if len(listz) < 1: return "-"
+        
+        if type(listz) == list:
+            listz = [str(item) for item in listz]
+            s = ",".join(listz)
+            hp.printEntity(s)
+            return s
+        return listz
 
     def findCourse(self, Competencies, level=None, price=None, duration=None):
 
@@ -35,13 +50,24 @@ class SearchController():
         
         courseModel = Course()
         data = courseModel.findCourseByCompetency(Competencies, filterCondition)
+        data["Knowledge"] = data["Knowledge"].apply(lambda x: self.compactList(x))
 
+        for col in hp.COMPETENCIES_LIST:
+            data[col] = data[col].apply(lambda x: self.list2string(x))
         return data
     
     def findJob(self,Competencies):
         
         job = Job()
         data = job.findJob(Competencies)
+        data["Knowledge"] = data["Knowledge"].apply(lambda x: self.compactList(x))
+
+        return data
+    
+    def jobConsulting(self,Competencies):
+        
+        job = Job()
+        data = job.jobConsulting(Competencies)
 
         return data
     
@@ -49,7 +75,7 @@ class SearchController():
     def filterCourseData(self, data, level, price, duration):
 
         if level != "None":
-            data = data[(data["Level"] == level)]
+            data = data[(data["Level"] == level.upper())]
 
         if duration != "unLimit":
             data = data[(data["Duration"] < int(duration))]

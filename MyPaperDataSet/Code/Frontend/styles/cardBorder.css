@@ -1,0 +1,57 @@
+.borderCus {
+    border-radius: 3px;
+    border: 2px solid #82AE46;
+}
+
+.alertFill {
+    color: #f9660a;
+    font-family: "Helvetica", "Helvet";
+    font-weight: bold;
+}
+
+.background {
+    background-color: chocolate;
+    padding: 5px;
+    border-radius: 7px;
+    animation: bordercolor 7s linear infinite;
+}
+
+.foreground {
+    background-color: white;
+    color: cornflowerblue;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+@keyframes bordercolor {
+    0% {
+        background-color: rgb(100, 243, 202);
+        box-shadow: 0 12px 14px 0 rgba(100, 243, 203, 0.7);
+    }
+
+    60% {
+        background-color: rgb(217, 157, 36);
+        box-shadow: 0 12px 14px 0 rgba(255, 155, 32, 0.35);
+    }
+
+    40% {
+        background-color: yellow;
+        box-shadow: 0 12px 14px 0 rgba(235, 247, 8, 0.7);
+    }
+
+    20% {
+        background-color: chartreuse;
+        box-shadow: 0 12px 14px 0 rgba(206, 250, 48, 0.7);
+    }
+
+    80% {
+        background-color: deepskyblue;
+        box-shadow: 0 12px 14px 0 rgba(79, 178, 254, 0.7);
+    }
+
+    100% {
+        background-color: rgb(221, 70, 251);
+        box-shadow: 0 12px 14px 0 rgba(255, 97, 226, 0.35);
+    }
+
+}

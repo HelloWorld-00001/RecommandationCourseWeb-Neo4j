@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %} Job Result {% endblock %}
+{% block addtionalLink %}
+<link rel="stylesheet" type="text/css" href="Frontend/styles/cardBorder.css">
+{% endblock %}
+{% block content %}
+
+<div class="container background-color: #FFFF00;" style="padding-top: 140px; padding-bottom: 50px;">
+
+    <div class="row ">
+        <div class="col-3 vertical-distribute-around" >
+            <div class="cart-detail p-2 p-md-2 borderCus background " style="border: 0px;">
+                <div class="foreground">
+                    <img src="/Frontend/images/avatarProfile.jpeg" style="width: 100%;">
+                </div>
+            </div>
+            <h4 class="billing-heading mb-3 textBoldColor" style="text-align: center;">{{userData["Username"]}}
+            </h4>
+        </div>
+
+        <div class="col-9" style="padding-left: 0;">
+            <form action="/updateProfile" method="post" id="updateProfileForm"  style="padding-left: 0;">
+                <div class="row">
+                    <div class="col-5">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="fullName" aria-describedby="emailHelp"
+                                placeholder="Enter name" value="{{userData['FullName']}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                                aria-describedby="emailHelp" placeholder="Enter email" value="{{userData['Email']}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Phone Number</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="phone" aria-describedby="emailHelp"
+                                placeholder="Enter phone" value="{{userData['Phone']}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Knowledge</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="knowledge" aria-describedby="emailHelp"
+                                placeholder="Enter your Knowledge" value="{{userData['Knowledge']}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Platfrom</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="platform" aria-describedby="emailHelp"
+                                placeholder="Enter Platfrom you known" value="{{userData['Platform']}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tool</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="tool" aria-describedby="emailHelp"
+                                placeholder="Enter tool you know" value="{{userData['Tool']}}">
+                        </div>
+
+                    </div>
+                    <div class="col-7">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="textBoldColor">Programming Language:</label>
+                        </div>
+                        <div class="form-row" style="padding-left: 10px;">
+
+                            {% for level in userData["ProgrammingLanguage"].keys() %}
+                            <div class="form-group col-md-3">
+                                <input type="text" class="bgYellow form-control textBoldColor" id="fwLabel"
+                                    value="{{level}}" readonly>
+                            </div>
+                            <div class="form-group col-md-9">
+                                <input type="text" class="form-control" id="{{level}}PL"
+                                    name="{{level}}PL" value="{{ userData['ProgrammingLanguage'][level]}}">
+                            </div>
+                            {% endfor %}
+        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="textBoldColor">Framework:</label>
+                        </div>
+                        <div class="form-row" style="padding-left: 10px;">
+                            {% for level in userData["Framework"].keys() %}
+                            <div class="form-group col-md-3">
+                                <input type="text" class="bgYellow form-control textBoldColor" id="fwLabel"
+                                    value="{{level}}" readonly>
+                            </div>
+                            <div class="form-group col-md-9">
+                                <input type="text" class="form-control" id="{{level}}PL"
+                                    name="{{level}}FW" value="{{ userData['Framework'][level]}}">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="form-group col-md-4">
+                                <button id="findCourseButton" type="submit"
+                                    class="search_submit_button buttonBorder bgOrange textBoldColor"
+                                    value="updateProfile">Updata profile</button>
+                            </div>
+                        </div>
+   
+                    </div>
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</script>
+
+
+{% endblock %}

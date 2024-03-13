@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(188deg 3% 83%);
+} */
+
+:root {
+    --container: 12rem;
+    --height: 4.0rem;
+    --ball: 3.0rem;
+}
+
+[type="checkbox"] {
+    appearance: none;
+    display: none;
+}
+
+.beforeChoose {
+    border-radius: 5px;
+}
+
+.afterChoose {
+    border-radius: 5px;
+    background-color: #FFB607;
+    border-color: #4F200D;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}  
+
+.checkbox__container {
+    scale: 1.2;
+    display: grid;
+    inline-size: var(--container);
+    block-size: var(--height);
+    border-radius: 100vh;
+    background: linear-gradient(45deg, hsl(39, 100%, 80%), hsl(300, 43%, 99%));
+    position: relative;
+    box-shadow: 0px 1.9px 3.2px rgba(0, 0, 0, 0.25);
+    outline: 1px solid hsl(0, 0%, 60%, 0.2);
+}
+
+.label-for-toggle {
+    cursor: pointer;
+    isolation: isolate;
+    display: grid;
+    place-content: center start;
+    width: inherit;
+    height: var(--height);
+    border-radius: inherit;
+    border: 10px solid hsl(200, 0%, 100%, 0.825);
+    box-shadow: 0 2px 2px 1px #0003 inset, inset 0 -1px 1.5px 1px #fff7;
+}
+
+.ball {
+    place-self: center start;
+    position: absolute;
+    left: 0.5rem;
+    mix-blend-mode: color;
+    display: grid;
+    place-content: center;
+    width: var(--ball);
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #FFB607, #FFD93D, #F6F1E9);
+    border-radius: 50%;
+    transition: transform 500ms cubic-bezier(0.4, 0.47, 0.66, 0.86);
+    box-shadow: 0 0 0.75rem 0 #0004;
+}
+
+.ball i {
+    font-size: 2.0em;
+    color: #4F200D;
+    -webkit-text-stroke: 1px #0006;
+}
+
+:checked ~ .checkbox__container .ball {
+    transform: translateX(calc(var(--container) - var(--ball) - 1rem))
+        rotate(540deg);
+}

@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block title %} Job Result {% endblock %}
+
+{% block content %}
+
+<style>
+	.borderCus {
+		border-radius: 3px;
+		border: 2px solid #82AE46;
+	}
+
+	.alertFill {
+		color: #f9660a;
+		font-family: "Helvetica", "Helvet";
+		font-weight: bold;
+	}
+
+	.background {
+		background-color: chocolate;
+		padding: 5px;
+		border-radius: 7px;
+		animation: bordercolor 7s linear infinite;
+	}
+
+	.foreground {
+		background-color: white;
+		color: cornflowerblue;
+		padding: 5px;
+		border-radius: 7px;
+	}
+
+	@keyframes bordercolor {
+		0% {
+			background-color: rgb(100, 243, 202);
+			box-shadow: 0 12px 14px 0 rgba(100, 243, 203, 0.7);
+		}
+
+		60% {
+			background-color: rgb(217, 157, 36);
+			box-shadow: 0 12px 14px 0 rgba(255, 155, 32, 0.35);
+		}
+
+		40% {
+			background-color: yellow;
+			box-shadow: 0 12px 14px 0 rgba(235, 247, 8, 0.7);
+		}
+
+		20% {
+			background-color: chartreuse;
+			box-shadow: 0 12px 14px 0 rgba(206, 250, 48, 0.7);
+		}
+
+		80% {
+			background-color: deepskyblue;
+			box-shadow: 0 12px 14px 0 rgba(79, 178, 254, 0.7);
+		}
+
+		100% {
+			background-color: rgb(221, 70, 251);
+			box-shadow: 0 12px 14px 0 rgba(255, 97, 226, 0.35);
+		}
+
+	}
+</style>
+
+<div class="container" style="padding-top: 140px; padding-bottom: 50px;">
+
+	{% for index, row in jobData.iterrows() %}
+	{% if index % 2 == 0 %}
+	<div class="row">
+	{% endif %}
+		<div class="col-6" style="padding: 5px;">
+
+			{% if row["Frequency"] > 20 %} 
+
+			<div class="cart-detail p-2 p-md-2 borderCus background ">
+				<div class="foreground">
+			{% else %}
+			<div class="cart-detail p-2 p-md-2 ">
+				<div >
+
+			{% endif %}
+					<h4 class="billing-heading mb-3 textBoldColor" style="text-align: center;">{{row["CareerName"]}}
+					</h4>
+					<div class="row">
+						<div class="col-6" style="padding-right: 5px;">
+							<img src="/Frontend/images/jobAvatar.webp" style="width: 100%;">
+						</div>
+						<div class="col-6" style="padding-left: 5px;">
+
+							<div class="col-md-12">
+								<label class="textBoldColor"> Matched: </label>
+								<label class="textBoldBlack">{{row["Matched"]}}/{{Competency["len"]}}</label>
+							</div>
+							<div class="col-md-12">
+								<label class="textBoldColor"> Frequency:</label>
+								<label class="textBoldBlack"> {{row["Frequency"]}} %</label>
+							</div>
+							<div class="col-md-12">
+								<label class="textBoldColor">Matched Skills:</label>
+								<label class="textBoldBlack"> </label>
+								<ul>
+									{% for com in Competency["competency"] %}
+									<li>{{com}}: {{row[com]}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	{% if index%2 == 1 %}
+	</div>
+	{% endif %}
+	{% endfor %}
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+	integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+	integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+	crossorigin="anonymous"></script>
+<script>
+	function checkEmpty(property) {
+		if (property.length === 0) { return false; }
+		return true;
+	}
+	function checkEmail(email) {
+		var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if (email.length === 0) {
+			return false;
+		}
+		if (filter.test(email) === false) { return false; }
+		return true;
+	}
+
+	$('#frmCheckOut').on('submit', function (e) {
+		const Name = document.querySelector('#Name').value;
+		const Address = document.querySelector('#Address').value;
+		const Phone = document.querySelector('#Phone').value;
+		//const pay = document.querySelector('#payMethod').value;
+		//const con = document.querySelector('#condition').value;
+
+		const email = document.querySelector('#Email').value; var check = true;
+		if (checkEmpty(Name) === false) {
+			check = false;
+			document.querySelector('#labelName').style.visibility = 'visible';
+		} else
+			document.querySelector('#labelName').style.visibility = 'invisible';
+		if (checkEmpty(Address) === false) {
+			check = false;
+			document.querySelector('#labelAddress').style.visibility = 'visible';
+		} else
+			document.querySelector('#labelAddress').style.visibility = 'invisible';
+		if (checkEmpty(Phone) === false) {
+			check = false;
+			document.querySelector('#labelPhone').style.visibility = 'visible';
+		} else
+			document.querySelector('#labelPhone').style.visibility = 'invisible';
+		if (checkEmail(email) === false) {
+			check = false;
+			document.querySelector('#labelEmail').style.visibility = 'visible';
+		}
+
+
+		if (check === false) {
+			e.preventDefault();
+			alert('Please fill all information');
+		}
+	});
+
+
+</script>
+
+
+{% endblock %}

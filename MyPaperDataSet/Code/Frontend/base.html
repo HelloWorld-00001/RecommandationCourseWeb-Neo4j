@@ -18,6 +18,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+{% block addtionalLink %} {% endblock %}
 <style>
 	input[readonly].bgBrownOrange {
 		background-color: #4F200D;
@@ -56,6 +57,15 @@
 		font-weight: bold;
 	}
 
+	.textBoldOrange {
+		color: #FFB607;
+		font-weight: bold;
+	}
+	.textBoldBlack {
+		color: #000000;
+		font-weight: bold;
+	}
+
 	.centerAll {
 		display: flex;
 		justify-content: center; /* Center horizontally */
@@ -67,7 +77,6 @@
 		width: 1200px;		
 		padding-top: 140px;
 		align-items: center;
-
 	}
 
 
@@ -84,8 +93,19 @@
 
 	}
 
+	.vertical-distribute-around {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 70vh; /* or another value depending on your layout */
+		/* Ensure this class has higher specificity or comes later in the CSS than .col-3 to override it */
+	}
+
 
 </style>
+
+{% block additionalStyle %} {% endblock %}
+
 
 </head>
 <body>
@@ -110,17 +130,29 @@
 					<ul class="main_nav_list">
 						<li class="main_nav_item"><a href="/">home</a></li>
 						<li class="main_nav_item"><a href="/"></a></li>
-						<li class="main_nav_item"><a href="Frontend/courses.html">Course Consulting</a></li>
-						<li class="main_nav_item"><a href="Frontend/elements.html">Job Consulting</a></li>
-						<li class="main_nav_item"><a href="Frontend/news.html">Profile</a></li>
+						<li class="main_nav_item"><a href="/consult">Consulting</a></li>
 						<li class="main_nav_item"><a href="/search">Search</a></li>
+						<li class="main_nav_item"><a href="/profile">Profile</a></li>
+
 					</ul>
 				</div>
 			</nav>
 		</div>
 		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			{% if user != "Unknown" %}
+			<div class="dropdown" >
+				<button class="btn btn-secondary dropdown-toggle textBoldColor" style="background: transparent; border: 0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Hello {{user}}
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				  <a class="dropdown-item" href="/login">log out</a>
+				  <a class="dropdown-item" href="/profile">Profile</a>
+				</div>
+			  </div>
+			{% else %}
 			<img src="Frontend/images/phone-call.svg" alt="">
-			<span>+43 4566 7788 2457</span>
+			<span><a href="/login" class="textBoldColor">Log in</a></span>
+			{% endif %}
 		</div>
 
 		<!-- Hamburger -->
@@ -142,12 +174,11 @@
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="/">Home</a></li>
-					<li class="menu_item menu_mm"><a href="/">About us</a></li>
-					<li class="menu_item menu_mm"><a href="/">Course Consulting</a></li>
-					<li class="menu_item menu_mm"><a href="Frontend/elements.html">Job Consulting</a></li>
-					<li class="menu_item menu_mm"><a href="Frontend/news.html">Profile</a></li>
-					<li class="menu_item menu_mm"><a href="/search">Search</a></li>
+					<li class="main_nav_item"><a href="/">home</a></li>
+					<li class="main_nav_item"><a href="/"></a></li>
+					<li class="main_nav_item"><a href="/consult">Consulting</a></li>
+					<li class="main_nav_item"><a href="/search">Search</a></li>
+					<li class="main_nav_item"><a href="/profile">Profile</a></li>
 				</ul>
 
 				<!-- Menu Social -->
