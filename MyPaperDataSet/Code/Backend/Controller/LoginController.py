@@ -19,13 +19,13 @@ class LoginController():
     def login(self):
 
         userE = self.user.getUser()
-        if userE is None:
+        if userE is None or len(userE) < 1:
             return False
         else:
             return True
         
     def getUserData(self):
-        userData = self.user.getFullInfor()
+        userData = self.user.getUserDataString()
         return userData
 
     def getUsername(self):

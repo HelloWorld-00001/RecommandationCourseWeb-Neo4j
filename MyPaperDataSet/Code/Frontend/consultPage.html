@@ -12,10 +12,10 @@
 <div class="home">
 
   <!-- Hero Slider -->
-  <div class="hero_slider_container centerAll" style="padding: 140px 40px 40px 10px;">
+  <div class="hero_slider_container centerAll" style="padding: 140px 0px 40px 10px;">
 
 
-    <form action="/consultData" method="post" class="formFormat" id="consultForm">
+    <form action="/consultProcess" method="post" class="formFormat" id="consultForm">
       <!-- Alert input, if use does not pass programing language value-->
       <div class="alert alert-danger" role="alert" id="alertPL" hidden>
         Programming language can not be empty
@@ -24,10 +24,11 @@
       <!-- switch mode: search or consult -->
       <div class="form-row align-items-center">
         <div class="form-group col-md-2"></div>
-        <div class="form-group col-md-2 textBoldColor afterChoose" style="text-align: right;" id="consultJob"> Consult Job
+        <div class="form-group col-md-2 textBoldColor afterChoose" style="text-align: right;" id="consultJob"> Consult
+          Job
         </div>
 
-        <div class="form-group col-md-3 d-flex align-items-center justify-content-center" >
+        <div class="form-group col-md-3 d-flex align-items-center justify-content-center">
           <input type="checkbox" name="checkbox" id="switchMode" class="input-toggle" />
           <div class="checkbox__container">
             <label for="switchMode" class="label-for-toggle">
@@ -37,9 +38,9 @@
             </label>
           </div>
 
-      </div>
+        </div>
         <div class="form-group col-md-2 textBoldColor beforeChoose" style="text-align: left;" id="consultCourse">
-          Consulting Mode
+          Consult Course
         </div>
         <div class="form-group col-md-2"></div>
 
@@ -48,80 +49,92 @@
 
       <div class="form-row">
         <div class="form-group col-md-8">
-
           <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" class="bgOrange form-control textBoldColor" id="plLabel" value="Programming Language"
-                readonly>
+  
+          <div class="col-7">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="textBoldColor">Programming Language:</label>
             </div>
-            <div class="form-group col-md-8">
-              <input type="text" class="form-control" id="inputProgrammingLanguage" name="inputProgrammingLanguage">
-            </div>
+            <div class="form-row" style="padding-left: 10px;">
 
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" class="bgYellow form-control textBoldColor" id="fwLabel" value="Framework" readonly>
-            </div>
-            <div class="form-group col-md-8">
-              <input type="text" class="form-control" id="inputFramework" name="inputFramework">
-            </div>
+              {% for level in ["Basic", "Intermediate", "Advanced"] %}
+              <div class="form-group col-md-3">
+                <input type="text" class="bgYellow form-control textBoldColor" style="font-size: 14px;" id="fwLabel" value="{{level}}" readonly>
+              </div>
+              <div class="form-group col-md-9">
+                <input type="text" class="form-control" id="{{level}}PL" name="{{level.upper()}}PL" value="">
+              </div>
+              {% endfor %}
 
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" class="bgOrange form-control textBoldColor" id="plLabel" value="Knowledge" readonly>
-            </div>
-            <div class="form-group col-md-8">
-              <input type="text" class="form-control" id="inputKnowledge" name="inputKnowledge">
             </div>
 
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" class="bgYellow form-control textBoldColor" id="plLabel" value="Tool" readonly>
+            <div class="form-group" style="padding-top: 12px;">
+              <label for="exampleInputEmail1" class="textBoldColor">Framework:</label>
             </div>
-            <div class="form-group col-md-8">
-              <input type="text" class="form-control" id="inputTool" name="inputTool">
+            <div class="form-row" style="padding-left: 10px;">
+              {% for level in ["Basic", "Intermediate", "Advanced"] %}
+              <div class="form-group col-md-3">
+                <input type="text" class="bgYellow form-control textBoldColor"  style="font-size: 14px;" id="fwLabel" value="{{level}}" readonly>
+              </div>
+              <div class="form-group col-md-9">
+                <input type="text" class="form-control" id="{{level}}PL" name="{{level.upper()}}FW" value="">
+              </div>
+              {% endfor %}
             </div>
 
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" class="bgOrange form-control textBoldColor" id="plLabel" value="Platform" readonly>
-            </div>
-            <div class="form-group col-md-8">
-              <input type="text" class="form-control" id="inputPlatform" name="inputPlatform">
-            </div>
 
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Fill by my skills
-              </label>
+          <div class="col-5">
+            <div class="form-group" style="padding-top: 15px;">
+              <label for="exampleInputEmail1" class="textBoldColor">Knowledge</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" name="knowledge"
+                aria-describedby="emailHelp" placeholder="Separate by comma ','" value="">
             </div>
-          </div>
-          <div class="form-row">
-            <!-- Check mode or find mode -->
-            <div class="form-group col-md-4">
-              <input type="text" id="option" name="option" value="Find Course" readonly hidden>
-              <input type="text" id="mode" name="mode" value="Search" readonly hidden>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="textBoldColor">Platfrom</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" name="platform"
+                aria-describedby="emailHelp" placeholder="Separate by comma ',' " value="">
             </div>
-            <div class="form-group col-md-4">
-              <button id="findCourseButton" type="submit"
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="textBoldColor">Tool</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" name="tool" aria-describedby="emailHelp"
+                placeholder="Separate by comma ','" value="">
+            </div>
+            <div class="form-group" hidden id="targetJob" style="height: 40px;">
+              <label for="exampleInputEmail1" class="textBoldColor">Target Job</label>
+                <div class="dropdown">
+                  <select id="targetJobVal" name="targetJobVal" class="dropdownCustom textBoldBlack">
+                    {% for job in jobList %}
+                      <option value="{{job}}" >{{job}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+            </div>
+          
+            <div class="form-group " style="height: 50px;" >
+              <button id="findCourseButton" type="submit" 
                 class="search_submit_button buttonBorder bgOrange textBoldColor" value="findCourse">Consult</button>
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group " style="padding-bottom: 100px;">
               
-              <a href="/consultByUser" class="btn button button1 search_submit_button buttonBorder bgOrange textBoldColor">Consult by my skill</a>
+              <a href="/consult" id="consulter"
+                class="btn button button1 search_submit_button buttonBorder bgOrange textBoldColor">Consult by my
+                skill</a>
             </div>
+
+          </div>
+          </div>
+
+
+          <div class="form-row">
+            <!-- Check mode or find mode -->
+            <input type="text" id="option" name="option" value="job" readonly hidden>
+
           </div>
         </div>
 
 
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-4" style="padding-bottom: 20px; padding-left: 20px;">
           <img id="imgSearch" src="Frontend/images/consult.gif" width="400" height="500">
         </div>
       </div>
@@ -136,48 +149,61 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  $('#consultForm').on('submit', function (e) {
-    e.preventDefault();
-    // Check  the input field, the programming language can not be empty
-    const ProgrammingLanguage = $('#inputProgrammingLanguage').val();
 
-    console.log(ProgrammingLanguage);
-    if (!ProgrammingLanguage) {
-      document.getElementById("alertPL").removeAttribute('hidden');
+
+  $(document).ready(function () {
+
+    function updateConsulterLink() {
+
+      var typeConsult = $('#switchMode').is(':checked') ? 'course' : 'job';
+      var targetJob = $('#targetJobVal').val();
+      var consulterLink = '/consultByUserData?typeConsult=' + typeConsult + '&targetJobVal='+ targetJob;
+
+      var consulterHref = '{{ user }}' === 'Unknown' ? '/login' : consulterLink;
+
+      // Update the link
+      $('#consulter').attr('href', consulterHref);
     }
-    else {
-      document.getElementById("option").value = $(document.activeElement).val();
 
 
-      document.getElementById("alertPL").innerHTML = "";
-      $('#searchForm').submit();
-    }
+
+    // This function runs when the document is ready
+    // check the mode of consult
+    $('#switchMode').change(function () {
+      updateConsulterLink();
+
+      // This function runs every time the checkbox state changes
+      if ($('#switchMode').is(':checked')) {
+        $("#consultCourse").addClass('afterChoose').removeClass('beforeChoose');
+        $("#consultJob").addClass('beforeChoose').removeClass('afterChoose');
+        $('#imgSearch').attr('src', 'Frontend/images/consult2.gif');
+
+        document.getElementById("targetJob").removeAttribute('hidden');
+        document.getElementById("option").value = "course";
+
+
+
+
+      } else {
+        $("#consultJob").addClass('afterChoose').removeClass('beforeChoose');
+        $("#consultCourse").addClass('beforeChoose').removeClass('afterChoose');
+        $('#switchMode').prop('checked', false);
+        $('#imgSearch').attr('src', 'Frontend/images/consult.gif');
+
+        document.getElementById("targetJob").setAttribute('hidden', 'true');
+        document.getElementById("option").value = "job";
+
+      }
+
+
+    });
+
+    updateConsulterLink();
+
+
 
   });
 
-  $(document).ready(function() {
-
-    // This function runs when the document is ready
-    $('#switchMode').change(function() {
-        // This function runs every time the checkbox state changes
-        if ($('#switchMode').is(':checked')) {
-          $("#consultCourse").addClass('afterChoose').removeClass('beforeChoose');
-          $("#consultJob").addClass('beforeChoose').removeClass('afterChoose');
-          document.getElementById("mode").value = "jobConsult";
-          $('#imgSearch').attr('src', 'Frontend/images/consult.gif');
-
-
-        } else {
-          $("#consultCourse").addClass('afterChoose').removeClass('beforeChoose');
-          $("#consultJob").addClass('beforeChoose').removeClass('afterChoose');
-          document.getElementById("mode").value = "courseConsult";
-          $('#switchMode').prop('checked', false);
-          $('#imgSearch').attr('src', 'Frontend/images/searchImageAnya.png');
-
-
-        }
-    });
-});
 
 
 

@@ -21,29 +21,6 @@
         Programming language can not be empty
       </div>
 
-      <!-- switch mode: search or consult -->
-      <div class="form-row align-items-center">
-        <div class="form-group col-md-2"></div>
-        <div class="form-group col-md-2 textBoldColor afterChoose" style="text-align: right;" id="searchMode"> Search Mode
-        </div>
-
-        <div class="form-group col-md-3 d-flex align-items-center justify-content-center" >
-          <input type="checkbox" name="checkbox" id="switchMode" class="input-toggle" />
-          <div class="checkbox__container">
-            <label for="switchMode" class="label-for-toggle">
-              <span class="ball arrow">
-                <i class="fas fa-arrow-right"></i>
-              </span>
-            </label>
-          </div>
-
-      </div>
-        <div class="form-group col-md-2 textBoldColor beforeChoose" style="text-align: left;" id="consultingMode">
-          Consulting Mode
-        </div>
-        <div class="form-group col-md-2"></div>
-
-      </div>
 
 
       <div class="form-row">
@@ -136,13 +113,16 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  $('#searchForm').on('submit', function (e) {
-    e.preventDefault();
+  
+
+  $(document).ready(function() {
+    $('#searchForm').on('submit', function (e) {
     // Check  the input field, the programming language can not be empty
     const ProgrammingLanguage = $('#inputProgrammingLanguage').val();
 
     console.log(ProgrammingLanguage);
     if (!ProgrammingLanguage) {
+      e.preventDefault();
       document.getElementById("alertPL").removeAttribute('hidden');
     }
     else {
@@ -154,33 +134,7 @@
     }
 
   });
-
-  $(document).ready(function() {
-
-    // This function runs when the document is ready
-    $('#switchMode').change(function() {
-        // This function runs every time the checkbox state changes
-        if ($('#switchMode').is(':checked')) {
-          $("#consultingMode").addClass('afterChoose').removeClass('beforeChoose');
-          $("#searchMode").addClass('beforeChoose').removeClass('afterChoose');
-          document.getElementById("mode").value = "Consulting";
-          document.getElementById("findJobButton").innerHTML = "Consult Job";
-          document.getElementById("findCourseButton").innerHTML = "Consult Course";
-          $('#imgSearch').attr('src', 'Frontend/images/consult.gif');
-
-
-        } else {
-          $("#searchMode").addClass('afterChoose').removeClass('beforeChoose');
-          $("#consultingMode").addClass('beforeChoose').removeClass('afterChoose');
-          document.getElementById("mode").value = "Search";
-          document.getElementById("findJobButton").innerHTML = "Find Job";
-          document.getElementById("findCourseButton").innerHTML = "Find Course";
-          $('#switchMode').prop('checked', false);
-          $('#imgSearch').attr('src', 'Frontend/images/searchImageAnya.png');
-
-
-        }
-    });
+   
 });
 
 

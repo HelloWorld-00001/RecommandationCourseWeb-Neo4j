@@ -23,7 +23,19 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="Frontend/styles/utilLogin.css">
 	<link rel="stylesheet" type="text/css" href="Frontend/styles/mainLogin.css">
+
 <!--===============================================================================================-->
+<style>
+	.textBoldColor {
+		color: #4F200D;
+		font-weight: bold;
+	}
+
+	.textBoldOrange {
+		color: #FFB607;
+		font-weight: bold;
+	}
+</style>
 </head>
 <body>
 	
@@ -34,7 +46,11 @@
 					<span class="login100-form-title">
 						Sign In
 					</span>
-
+					<div class="flex-col-c p-t-10 p-b-20 ">
+						<span class="textBoldOrange">
+							{{message}}
+						</span>
+					</div>
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
 						<input class="input100" type="text" name="username" placeholder="Username">
 						<span class="focus-input100"></span>

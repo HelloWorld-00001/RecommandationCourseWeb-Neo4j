@@ -1,5 +1,6 @@
 from Model.BaseModel import BaseModel
 from Helper.Helper import Helper as hp
+from Helper.CompetencyHelper import CompetencyHelper as chp
 import pandas as pd
 
 class User(BaseModel): 
@@ -43,13 +44,14 @@ class User(BaseModel):
     
     def getUniqueData(self, data, column):
         # if skill have no level, separate it to list
-        if data[column] is None: return "Empty"
+
+        if data[column] is None or len(data[column]) < 1: return []
+
         if type(data[column].iloc[0]) == list:
             skill = data[column].dropna().explode().unique()
         else:
             skill = data[column].dropna().astype(str).explode().unique()
-        skill = ["Empty"] if len(skill) < 1 else skill
-        return ",".join(skill)
+        return [] if len(skill) < 1 else skill
 
 
     def getUserSkill(self):
@@ -75,33 +77,6 @@ class User(BaseModel):
 
 
         return pd.concat([userSkill, userSkill2], axis=1)
-
-    def getSkill(self):
-        userSkill = self.getUserSkill()
-        userSkill["ProgrammingLanguageLevel"] = userSkill["ProgrammingLanguageLevel"].str.upper()
-        userSkill['FrameworkLevel'] = userSkill['FrameworkLevel'].str.upper()
-
-        userSkilldict = {}
-        for com in hp.COMPETENCIES_LIST:
-            if (com == "ProgrammingLanguage" or com == "Framework"):
-                skill={}
-                for index, row in userSkill.iterrows():
-                    if (pd.isna(row[com])): continue
-                    level = row[com + "Level"] if row[com + "Level"] is not None else "Basic"
-                    hp.printEntity(level.upper())
-
-                    if skill[row[com]] is not None:
-                        lowLevel = hp.getLowerLevel(level.upper(), skill[row[com]])
-                        skill[row[com]] = level.upper() if skill[row[com]] == lowLevel else skill[row[com]]
-                    else:
-                        skill[row[com]] = level.upper()
-                
-                userSkilldict[com] = skill
-            else:
-                userSkilldict[com] = self.getSkillList(userSkill, com)
-
-
-        return self.convertDict(userSkilldict)
     
 
     # convert the return value of query to a dict with level: [list of programming languages]    
@@ -134,6 +109,7 @@ class User(BaseModel):
 
     def getFullInfor(self):
         userSkill = self.getUserSkill()
+        hp.printEntity(userSkill, "UserSkill", "User.py")
 
         userSkill["ProgrammingLanguageLevel"] = userSkill["ProgrammingLanguageLevel"].str.upper()
         userSkill['FrameworkLevel'] = userSkill['FrameworkLevel'].str.upper()
@@ -157,6 +133,18 @@ class User(BaseModel):
                 userSkilldict[com] = self.getUniqueData(userSkill, com)
         
         return userSkilldict
+    
+    def getUserDataString(self):
+        userData = self.getFullInfor()
+        for col in userData.keys():
+            if (col == "ProgrammingLanguage" or col == "Framework"):
+                for level in hp.getLevelList():
+                    userData[col][level.upper()] = hp.list2String(userData[col][level.upper()])
+                
+            else:
+                userData[col] = hp.list2String(userData[col])
+        
+        return userData
 
     
     def getUser(self):
@@ -168,6 +156,7 @@ class User(BaseModel):
         user = self.queryToDataFrame(query)
         return user
     
+    # convert all competency to condition in neo4j
     def toNeo4jCondition(self, data, competencyColumn, sign):
         
         attrCol = competencyColumn[:1].lower() + competencyColumn[1:]
@@ -216,5 +205,10 @@ class User(BaseModel):
         '''
         a = self.queryToDataFrame(query)
         return True
+    
 
-        
+
+
+    
+
+            

@@ -7,6 +7,7 @@ from Model.Course import Course
 from Model.Job import Job
 from Controller.CompetencyController import CompetencyController as cc
 
+
 class SearchController():
 
     def makeCourseFilterCondition(self, level, price, duration):
@@ -38,7 +39,6 @@ class SearchController():
         if type(listz) == list:
             listz = [str(item) for item in listz]
             s = ",".join(listz)
-            hp.printEntity(s)
             return s
         return listz
 
@@ -49,7 +49,7 @@ class SearchController():
             filterCondition = self.makeCourseFilterCondition(level, price, duration)
         
         courseModel = Course()
-        data = courseModel.findCourseByCompetency(Competencies, filterCondition)
+        data = courseModel.findCourseByCompetencyController(Competencies, filterCondition)
         data["Knowledge"] = data["Knowledge"].apply(lambda x: self.compactList(x))
 
         for col in hp.COMPETENCIES_LIST:
@@ -64,12 +64,7 @@ class SearchController():
 
         return data
     
-    def jobConsulting(self,Competencies):
-        
-        job = Job()
-        data = job.jobConsulting(Competencies)
-
-        return data
+    
     
 
     def filterCourseData(self, data, level, price, duration):

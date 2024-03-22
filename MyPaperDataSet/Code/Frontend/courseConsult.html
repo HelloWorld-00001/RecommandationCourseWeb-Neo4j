@@ -1,90 +1,231 @@
 {% extends "base.html" %}
 {% block title %} Job Result {% endblock %}
+{% block addtionalLink %}
+<link rel="stylesheet" type="text/css" href="Frontend/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="Frontend/styles/cardBorder.css">
+{% endblock %}
+
 
 {% block content %}
 
 <style>
-	.borderCus {
-		border-radius: 3px;
-		border: 2px solid #82AE46;
+	/* Custom scroll menu for course cards */
+	.scrollmenu {
+		background-color: #F6F1E9;
+		/* Background color */
+		overflow-x: auto;
+		/* Enable horizontal scrolling */
+		overflow-y: hidden;
+		/* Prevent vertical scrolling */
+		white-space: nowrap;
+		/* Ensure inline behavior for child elements */
+		display: flex;
+		/* Use flexbox layout */
+		flex-wrap: nowrap;
+		/* Prevent wrapping of items */
 	}
 
-	.alertFill {
-		color: #f9660a;
-		font-family: "Helvetica", "Helvet";
-		font-weight: bold;
+	.scrollmenu .form-row {
+		display: inline-flex;
+		/* Display as inline-flex to respect the nowrap of parent */
+		flex: 0 0 auto;
+		/* Do not grow, do not shrink, basis is auto */
+		margin-right: 10px;
+		/* Add some space between the cards */
+		min-width: 50px;
+		/* Minimum width for each card */
 	}
 
-	.background {
-		background-color: chocolate;
-		padding: 5px;
-		border-radius: 7px;
-		animation: bordercolor 7s linear infinite;
+	/* Remove margin-right from the last card */
+	.scrollmenu .form-row:last-child {
+		margin-right: 0;
 	}
 
-	.foreground {
-		background-color: white;
-		color: cornflowerblue;
-		padding: 5px;
-		border-radius: 7px;
+
+	/* You might not need these rules if you don't use <a> tags inside your scrollmenu, but they're here if you need them for other elements */
+	.scrollmenu a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px;
+		text-decoration: none;
 	}
 
-	@keyframes bordercolor {
-		0% {
-			background-color: rgb(100, 243, 202);
-			box-shadow: 0 12px 14px 0 rgba(100, 243, 203, 0.7);
-		}
+	.scrollmenu a:hover {
+		background-color: #FFD93D;
+	}
 
-		60% {
-			background-color: rgb(217, 157, 36);
-			box-shadow: 0 12px 14px 0 rgba(255, 155, 32, 0.35);
-		}
 
-		40% {
-			background-color: yellow;
-			box-shadow: 0 12px 14px 0 rgba(235, 247, 8, 0.7);
-		}
+	div.scrollmenu div:hover {
+		background-color: #9fd3fc;
+	}
 
-		20% {
-			background-color: chartreuse;
-			box-shadow: 0 12px 14px 0 rgba(206, 250, 48, 0.7);
-		}
+	.cardStyle {
+		border: 1px;
+		border-radius: 5px;
+		border-color: #FFB607;
+	}
 
-		80% {
-			background-color: deepskyblue;
-			box-shadow: 0 12px 14px 0 rgba(79, 178, 254, 0.7);
-		}
-
-		100% {
-			background-color: rgb(221, 70, 251);
-			box-shadow: 0 12px 14px 0 rgba(255, 97, 226, 0.35);
-		}
-
+	.customRow .row-row {
+		padding-right: 5px;
 	}
 </style>
 
-<div class="container" style="padding-top: 140px; padding-bottom: 50px;">
+<div class="container" style="padding-top: 40px; padding-bottom: 50px;">
 
-	{% for coursePath in content %}
-            {{"\n--------------------------------"}}
-            {{"Require: "}}
-            {{coursePath["Require"]["CareerName"]}}<br />
-            {{"\n---- Start Course Path ----"}}
-            {% for course in coursePath["CoursePath"] %}
-			<br />{{"CoursePath: "}}<br />
+	<div class="container" style="padding: 140px 0px 40px 10px;">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header bgOrange" style="text-align: center;">
+						<p class="textBoldColor" style="font-size: 20px; height: 30px;">
+							{{content["JobRequired"]["CareerName"].to_string(index=False)}}</p>
+					</div>
+					<div class="card-body bgCream" style="padding-top: 10px; ">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="dropdown">
+									<select id="sortByDropdown" name="sortByDropdown" class="dropdownCustom">
+										{% for job in content["JobList"] %}
+										<a href="/courseConsult">
+											<option value="{{job}}">{{job}}</option>
+										</a>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<input type="text" class="bgYellow form-control textBoldColor" id="sortByOption"
+									value="Change" readonly>
+							</div>
 
-                {%  for subCourse in course %}
-                    {{subCourse["CourseName"] + "Level: " + subCourse["Level"]}}
-                    {{"-->"}}
+						</div>
+						<div class="row columnScroller"
+							style="height: 300px; background-color: #F6F1E9; padding-left: 0%;width: 100%;">
+							<label class="textBoldColor">Required Skill:</label>
+							<label class="textBoldBlack"> </label>
+							<ul>
+								{% for skill in ["ProgrammingLanguage", "Framework", "Knowledge", "Platform",
+								"Tool"] %}
+								<li><span class="textBoldColor">{{skill}}:</span>
+									{{content["JobRequired"][skill].tolist()}}</li>
+								{% endfor %}
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				{% for i in range(3) %}
+				{% for j in range(3) %}
+
+				<div class="row bgYellow textBoldColor justify-content-center">
+					Learning Path {{i + 1}} - {{j + 1}}. Include: {{content["RecommandCourse"][j]["CoursePath"][i]["TotalLength"]}} Course(s)
+				</div>
+				<div class="form-row scrollmenu">
+					{% for course in content["RecommandCourse"][j]["CoursePath"][i] %}
+					<div class="form-group col-md-5 cardStyle">
+						<div class="p-2 p-md-2 ">
+							<h4 class="billing-heading mb-3 textBoldBlack" style="text-align: center;word-wrap: break-word;   white-space: normal;							">
+								{{course["CourseName"]}}
+							</h4>
+							<div class="row">
+								<div class="col-md-12">
+								<div class="row">
+									{% if loop.index % 2 == 0 %}
+									<img src="Frontend/images/CuteGirl2.webp" style="width: 100%;">
+									{% else %}
+									<img src="Frontend/images/CuteGirl.webp" style="width: 100%;">
+									{% endif %}
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+									<label class="textBoldColor"> Matched: 10/12</label></div>
+									<div class="col-md-6">
+									<label class="textBoldBlack"> Level:  {{course["Level"]}} </label></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+									<label class="textBoldColor"> Price:  {{course["Price"]}} $</label></div>
+									<div class="col-md-6">
+									<label class="textBoldBlack"> Duration:  {{course["Duration"]}} h</label></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+									<label class="textBoldColor"> Enroll: {{course["Enroll"]}}</label></div>
+									<div class="col-md-6">
+									<label class="textBoldColor"> Rating: {{course["Rate"]}}</label></div>
+								</div>
+
+					
+
+								<div class="row ">
+									<div class="col-md-2 ">
+										<a href="{{course['Link']}}" style="color: #FFB607; font-weight: bold;">Learn</a>
+									</div>
+									<div class="col-md-7 ">
+									</div>
+								</div>
+								
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+					<div class="form-group col-md-2 align-self-center">
+						<img src="Frontend/images/rightArrow.png" style="width: 100%;">
+					</div>
+					{% endfor %}
+					<div class="form-group col-md-4 cardStyle align-self-center">
+						<div class="borderCus  p-2 p-md-2 ">
+							<div class="">
+								<h4 class="billing-heading mb-3 textBoldColor" style="text-align: center;">
+									Sumerize
+								</h4>
+								<div class="row" style="padding-left: 10px;">
+									<div class="col-md-12">
+										<div class="row justify-content-center">
+											<img src="Frontend/images/sumerize.jpeg" style="width: 50%;">
+										</div>
+										<div class="row">
+											<label class="textBoldColor"> Total Time: </label>
+											<label class="textBoldBlack"> {{content["RecommandCourse"][j]["CoursePathInfor"][i]["TotalDuration"]}} hour(s)</label>
+
+										</div>
+										<div class="row">
+											<label class="textBoldColor"> Total Price:</label>
+											<label class="textBoldBlack">  {{content["RecommandCourse"][j]["CoursePathInfor"][i]["TotalPrice"]}} $</label>
+
+										</div>
+										<div class="row customRow">
+											<label class="textBoldColor">Skill Will gain:</label>
+											<ul>
+												<li>ProgrammingLanguage: Java</li>
+												<li>Framework: Spring</li>
+												<li>Knowledge: OOP</li>
+
+											</ul>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+				{% endfor %}
 				{% endfor %}
 
-                <br />{{"---- End Path ----"}}<br />
-			
-			{% endfor %}
+			</div>
 
-
-            <br />{{"--------------------------------"}}<br />
-	{% endfor %}
+		</div>
+	</div>
 
 </div>
 
